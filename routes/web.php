@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AgentController;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -16,7 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* START Add by Dhaval */
+Route::get('/sign-up-bar', [HomeController::class, 'signUpBar'])->name('sign.up.bar');
+/* END Add by Dhaval */
+
 $appRoutes = function () {
+
     Auth::routes();
 
     Route::get('/', [HomeController::class, 'agent_zoho_preview'])->name('agent.preview');
@@ -31,3 +37,4 @@ $appRoutes = function () {
 };
 
 Route::group(['prefix' => '/', 'namespace' => ''], $appRoutes);
+
