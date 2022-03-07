@@ -845,8 +845,8 @@ form {
     width: 100%;
     z-index: -1;
     height: 58px;
-    right: -6px;
-    top: 6px;
+    /* right: -6px;
+    top: 6px; */
 }
 
 @media (max-width: 991px) {

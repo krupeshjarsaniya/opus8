@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AgentController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -31,3 +32,12 @@ $appRoutes = function () {
 };
 
 Route::group(['prefix' => '/', 'namespace' => ''], $appRoutes);
+
+// SIGNUP
+Route::get('/signup', [LoginController::class, 'signup'])->name('signup');
+
+
+
+//AGENT BACKEND
+
+Route::get('/agent_backend', [AgentController::class, 'agentBackend'])->name('agent.backend');
