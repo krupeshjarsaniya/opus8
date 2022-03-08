@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Agent;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
@@ -73,5 +74,11 @@ class HomeController extends Controller
             $data['message'] = "Error while processing your request...";
             return view('agent-error')->with($data);
         }
+    }
+
+    public function signUpBar(Request $request)
+    {
+        // dd('test 001');
+       return view('Charts.sign-up-chart');
     }
 }
