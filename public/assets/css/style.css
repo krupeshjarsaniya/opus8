@@ -1208,3 +1208,40 @@ input[type="range"]::-webkit-slider-thumb {
         flex-direction: column;
     }
 }
+
+
+
+
+
+
+.apexcharts-legend-marker{
+    border-radius: 2px !important;
+    width: 25px !important;
+}
+
+
+.img{
+    position: absolute;
+    margin: 190px 0 0 209px ;
+    border:2px solid black ;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+.apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+    flex-direction: column;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+#app{
+
+}
+
+#chart{
+
+}

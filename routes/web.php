@@ -37,6 +37,7 @@ Route::group(['prefix' => '/', 'namespace' => ''], $appRoutes);
 
 // SIGNUP
 Route::get('/signup', [LoginController::class, 'signup'])->name('signup');
+Route::get('/signup_chart', [LoginController::class, 'signupChart'])->name('signup.chart');
 
 
 

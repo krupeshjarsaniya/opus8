@@ -76,4 +76,9 @@ class LoginController extends Controller
     {
         return view('auth.signup');
     }
+
+    public function signupChart()
+    {
+        return view('auth.signup-chart');
+    }
 }

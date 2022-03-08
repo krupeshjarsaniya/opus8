@@ -4,16 +4,28 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-      <h1 class="text-center mb-5 font-weight-light">Sign Ups Broken down by <b>industry</b></h1>
-      <div class="col-lg-8" id="app">
+        <h1 class="text-center mb-5 font-weight-light">Sign Ups Broken down by <b>industry</b></h1>
+        
+       <div id="app" class="px-5">
+          <div id="chart">
             <apexchart type="donut" :options="chartOptions" :series="series"></apexchart>
-      </div>
+          </div>
+       </div>
+
+        <!-- <div id="app">
+            <div class="img">
+                <img src="{{ asset('assets/images/avatar-img.png') }}" class="middleimg">
+            </div>
+            <apexchart type="donut" :options="chartOptions" :series="series"></apexchart>       
+        </div> -->
+
+
+        
     <div>
 </section>
-
-<script src="{{ asset('assets/js/chart/chart.js') }}"></script>
-<script src="{{ asset('assets/js/chart/apexcharts.js') }}"></script>
-<script src="{{ asset('assets/js/chart/vue-apexcharts.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
 <script>
       // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
       // Based on https://gist.github.com/blixt/f17b47c62508be59987b
@@ -30,8 +42,7 @@
           apexchart: VueApexCharts,
         },
         data: {
-          
-          series: [40, 55, 41, 17, 15],
+          series: [44, 55, 41, 17, 15],
           chartOptions: {
             chart: {
               type: 'donut',
