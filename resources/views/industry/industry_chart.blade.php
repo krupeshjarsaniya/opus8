@@ -27,6 +27,7 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
 <script>
+  
       // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
       // Based on https://gist.github.com/blixt/f17b47c62508be59987b
       var _seed = 42;
@@ -50,6 +51,15 @@
             responsive: [{
               breakpoint: 480,
               options: {
+                plotOptions: {
+                  pie: {
+                    customScale: 0.8,
+                    size: 200,
+                    donut: {
+                      size: '65%',
+                    },
+                  }
+                },
                 chart: {
                   width:  500
                 },
