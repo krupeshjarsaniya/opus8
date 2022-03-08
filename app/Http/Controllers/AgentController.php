@@ -249,4 +249,9 @@ class AgentController extends Controller
     {
         return view('agent-backend');
     }
+
+    public function agentFrontend()
+    {
+        return view('agent-frontend');
+    }
 }

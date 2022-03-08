@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AgentController;
+use App\Http\Controllers\IndustryController;
+use App\Http\Controllers\WeeklyBillingController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
@@ -41,3 +43,13 @@ Route::get('/signup', [LoginController::class, 'signup'])->name('signup');
 //AGENT BACKEND
 
 Route::get('/agent_backend', [AgentController::class, 'agentBackend'])->name('agent.backend');
+Route::get('/agent_frontend', [AgentController::class, 'agentFrontend'])->name('agent.frontend');
+
+//INDUSTRY
+
+Route::get('/industry', [IndustryController::class, 'industry'])->name('industry');
+Route::get('/industry_chart', [IndustryController::class, 'industryChart'])->name('industry.chart');
+
+// Weekly Billing
+
+Route::get('/bill_form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
