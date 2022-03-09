@@ -60,3 +60,4 @@ Route::get('/industry_chart', [IndustryController::class, 'industryChart'])->nam
 // Weekly Billing
 
 Route::get('/bill_form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
+Route::get('/bill_chart', [WeeklyBillingController::class, 'billChart'])->name('bill.chart');

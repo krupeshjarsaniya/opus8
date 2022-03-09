@@ -10,4 +10,8 @@ class WeeklyBillingController extends Controller
     {
         return view('weekly_billing.bill_form');
     }
+    public function billChart()
+    {
+        return view('weekly_billing.bill_chart');
+    }
 }
