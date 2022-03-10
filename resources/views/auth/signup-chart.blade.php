@@ -5,14 +5,14 @@
 <section class="remedy-layout-wrapper">
     <div class="container">
         <h1 class="text-center mb-5 font-weight-light">Sign <b> Up</b></h1>
-        <div id="chartdiv" class=""></div>
+        <div id="sign_chart" class=""></div>
         <div>
 </section>
+@endsection
+@push('js')
 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-@endsection
-@push('js')
 <script type="text/javascript">
 	/**
  * ---------------------------------------
@@ -28,7 +28,7 @@
 
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdiv");
+var root = am5.Root.new("sign_chart");
 
 // Set themes
 // https://www.amcharts.com/docs/v5/concepts/themes/

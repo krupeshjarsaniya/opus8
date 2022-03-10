@@ -4,7 +4,7 @@
 <section class="remedy-layout-wrapper">
     <div class="container">
         <h1 class="text-center mb-5 font-weight-light">Week 41 <b>Billings</b></h1>
-        <div id="chartdiv"></div>
+        <div id="bill_chart"></div>
     <div>
 </section>
 <?php $__env->stopSection(); ?>
@@ -27,7 +27,7 @@
 
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdiv");
+var root = am5.Root.new("bill_chart");
 
 // Set themes
 // https://www.amcharts.com/docs/v5/concepts/themes/
@@ -35,37 +35,64 @@ root.setThemes([
   am5themes_Animated.new(root)
 ]);
 
-var data = [{
-  name: "Monica",
-  steps: 45688,
-  pictureSettings: {
-    src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+var data = [
+  {
+    name: "Bella",
+    steps: 45688,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Sunny",
+    steps: 35781,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Taku",
+    steps: 35781,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Shamaura",
+    steps: 35781,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Sebastian",
+    steps: 100,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Dan",
+    steps: 25464,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Tyler",
+    steps: 15465,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Ben",
+    steps: 11561,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
   }
-}, {
-  name: "Joey",
-  steps: 35781,
-  pictureSettings: {
-    src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
-  }
-}, {
-  name: "Ross",
-  steps: 25464,
-  pictureSettings: {
-    src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
-  }
-},{
-  name: "Rachel",
-  steps: 15465,
-  pictureSettings: {
-    src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
-  }
-}, {
-  name: "Chandler",
-  steps: 11561,
-  pictureSettings: {
-    src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
-  }
-}];
+];
 
 // Create chart
 // https://www.amcharts.com/docs/v5/charts/xy-chart/
