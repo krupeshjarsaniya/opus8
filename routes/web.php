@@ -47,7 +47,6 @@ Route::get('/signup', [LoginController::class, 'signup'])->name('signup');
 Route::get('/signup-chart', [LoginController::class, 'signupChart'])->name('signup.chart');
 
 //AGENT BACKEND
-
 Route::get('/agent-backend', [AgentController::class, 'agentBackend'])->name('agent.backend');
 Route::get('/agent-frontend', [AgentController::class, 'agentFrontend'])->name('agent.frontend');
 
@@ -56,7 +55,6 @@ Route::get('/industry', [IndustryController::class, 'industry'])->name('industry
 Route::get('/industry-chart', [IndustryController::class, 'industryChart'])->name('industry.chart');
 
 // Weekly Billing
-
 Route::get('/bill-form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
 Route::get('/bill-chart', [WeeklyBillingController::class, 'billChart'])->name('bill.chart');
 
