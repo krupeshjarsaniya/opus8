@@ -46,23 +46,17 @@ Route::group(['prefix' => '/', 'namespace' => ''], $appRoutes);
 Route::get('/signup', [LoginController::class, 'signup'])->name('signup');
 Route::get('/signup_chart', [LoginController::class, 'signupChart'])->name('signup.chart');
 
-
-
 //AGENT BACKEND
-
 Route::get('/agent_backend', [AgentController::class, 'agentBackend'])->name('agent.backend');
 Route::get('/agent_frontend', [AgentController::class, 'agentFrontend'])->name('agent.frontend');
 
 //INDUSTRY
-
 Route::get('/industry', [IndustryController::class, 'industry'])->name('industry');
 Route::get('/industry_chart', [IndustryController::class, 'industryChart'])->name('industry.chart');
 
 // Weekly Billing
-
 Route::get('/bill_form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
 Route::get('/bill_chart', [WeeklyBillingController::class, 'billChart'])->name('bill.chart');
-
 
 //METTING
 Route::get('/meeting_chart', [MeetingController::class, 'meetingChart'])->name('meetign.chart');
