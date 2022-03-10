@@ -1210,32 +1210,17 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#chart {
+/* yagnik start */
+#industry_chart {
     max-width: 59%;
     margin: 10% auto;
     padding: 0;
   }
-
-  g.apexcharts-inner.apexcharts-graphical{
-    transform: translate(190px, 5px) !important;
+  #industry_chart g.apexcharts-inner.apexcharts-graphical{
+    transform: translate(185px, 5px) !important;
 }
 
-.apexcharts-legend.apexcharts-align-center.apx-legend-position-right{
+#industry_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-right{
     position: absolute !important;
     left: 0 !important;
     top: 50% !important;
@@ -1243,7 +1228,7 @@ input[type="range"]::-webkit-slider-thumb {
     right: auto !important;
 }
 
-.apexcharts-legend-marker{
+#industry_chart.apexcharts-legend-marker{
     width: 25px !important;
     height: 15px !important;
     border-radius: 2px !important;
@@ -1261,13 +1246,12 @@ input[type="range"]::-webkit-slider-thumb {
     border: 2px solid #000;
 }
 
-
-.apexcharts-legend-text{
+#industry_chart .apexcharts-legend-text{
     font-size: 16px !important;
     font-weight: bolder !important;
 }
 
-@media(min-width:280px) and (max-width:767px){
+/* @media(min-width:280px) and (max-width:767px){
 
 g.apexcharts-inner.apexcharts-graphical {
     transform: translate(-120px, 5px) !important;
@@ -1318,31 +1302,58 @@ foreignObject .apexcharts-legend
         top: 29.2%;
         left: 57.9%;
     }
-}
+} */
 
 
-  #chartdiv {
+#sign_chart {
     width: 100%;
-    height: 800px;
-  }
-
-  #chart1{
-      height: 500px;
-      width: 600px;
-      margin: 90px auto;
-  }
-
-
-  @media(min-width: 280px) and (max-width: 767px)
-{
-    .apexcharts-legend
-    {
-        right: 70% !important;
-    }
-
-    #chart1 {
-     height: 100px;
-      width: 400px;
-      margin-top: 4px auto;
-    }
+    height: 700px;
 }
+
+#bill_chart {
+    width: 100%;
+    height: 700px;
+}
+
+
+
+  /* yagnik end */
+
+ /*Start By Rahul*/
+ #agentFrontendChart{
+    height: 600px;
+    width: 600px;
+    margin: 90px auto;
+}
+
+#agentFrontendChart .apexcharts-legend
+  {
+      right: 75% !important;
+  }
+
+  #agentFrontendChart .apexcharts-graphical
+  {
+     transform: translate(150px, 0px)!important;
+  }
+
+
+@media(min-width: 280px) and (max-width: 767px)
+{
+  #agentFrontendChart .apexcharts-legend
+  {
+      right: 65% !important;
+  }
+
+  #agentFrontendChart .apexcharts-graphical
+  {
+     transform: translate(120px, 0px)!important;
+  }
+
+  #agentFrontendChart {
+   height: 50px;
+    width: 350px;
+    margin-top: 4px auto;
+  }
+}
+
+/*End By Rahul

@@ -5,9 +5,9 @@
     <div class="container">
         <h1 class="text-center font-weight-light "><b>Website </b> Visit</h1>
         <div id="app">
-              <div id="chart1">
-                <apexchart type="polarArea" :options="chartOptions" :series="series"></apexchart>
-              </div>
+            <div id="agentFrontendChart">
+              <apexchart type="polarArea" :options="chartOptions" :series="series"></apexchart>
+            </div>
         </div>
     <div>
 </section>
