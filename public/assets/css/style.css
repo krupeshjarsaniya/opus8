@@ -1210,14 +1210,19 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
+
+
+
 /* yagnik start */
-#industry_chart {
-    max-width: 59%;
+
+#industry_chart{
+    width: 59%;
     margin: 10% auto;
     padding: 0;
-  }
-  #industry_chart g.apexcharts-inner.apexcharts-graphical{
-    transform: translate(185px, 5px) !important;
+}
+
+#industry_chart .apexcharts-graphical{
+    transform: translate(150px, 5px) !important;
 }
 
 #industry_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-right{
@@ -1228,11 +1233,17 @@ input[type="range"]::-webkit-slider-thumb {
     right: auto !important;
 }
 
-#industry_chart.apexcharts-legend-marker{
+#industry_chart .apexcharts-legend-marker {
     width: 25px !important;
     height: 15px !important;
-    border-radius: 2px !important;
-    margin-right: 10px !important;
+    margin-right: 3px;
+    border-radius: 3px !important;
+    margin-right: 10px;
+}
+
+#industry_chart .apexcharts-legend-text{
+    font-size: 16px !important;
+    font-weight: bolder !important;
 }
 
 .demo_image{
@@ -1241,68 +1252,52 @@ input[type="range"]::-webkit-slider-thumb {
     object-fit: cover;
     position: absolute;
     top: 32.5%;
-    left: 49.8%;
+    left: 47.5%;
     border-radius: 50%;
     border: 2px solid #000;
 }
 
-#industry_chart .apexcharts-legend-text{
-    font-size: 16px !important;
-    font-weight: bolder !important;
-}
+@media(min-width:280px) and (max-width:767px){
+    #industry_chart{
+        width: 300px;
+    }
 
-/* @media(min-width:280px) and (max-width:767px){
+    #industry_chart .apexcharts-graphical{
+        transform: translate(0, 0) !important;
+    }
 
-g.apexcharts-inner.apexcharts-graphical {
-    transform: translate(-120px, 5px) !important;
-}
+    #industry_chart .apexcharts-svg foreignObject{
+        height: 500px !important;
+    }
+    #industry_chart .apexcharts-svg{
+        height: 500px !important;
+    }
 
-#chart {
-    max-width: 0;
-    margin: 0;
-    padding: 0;
-  }
-foreignObject .apexcharts-legend
-{
-    display: block !important; 
-}
+    #industry_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-right{
+        left: 27% !important;
+        top: 80% !important;
+    }
 
-.demo_image{
-    width: 27%;
-    top: 36.3%;
-    left: 38%;
-}
+    .demo_image{
+        width: 13%;
+        top: 32.9%;
+        left: 42%;
+    }
+}   
 
-.apexcharts-legend-text{
-    font-size: 20px !important;
-    font-weight: bolder !important;
-}
-}
 
 @media(min-width:768px) and (max-width:1023px){
-    .demo_image{
-        width: 9%;
-        top: 29.2%;
-        left: 57.9%;
-    }
+ 
 }
 
 @media(min-width:820px) and (max-width:1180px){
-    .demo_image{
-        width: 9%;
-        top: 25.2%;
-        left: 56.9%;
-    }
+   
 }
 
 
 @media(min-width:1024px) and (max-width:1365px){
-    .demo_image{
-        width: 10%;
-        top: 29.2%;
-        left: 57.9%;
-    }
-} */
+ 
+}
 
 
 #sign_chart {

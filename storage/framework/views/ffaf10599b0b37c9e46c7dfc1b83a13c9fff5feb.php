@@ -66,7 +66,7 @@ var data = [
   },
   {
     name: "Sebastian",
-    steps: 100,
+    steps: 20000,
     pictureSettings: {
       src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
     }

@@ -5,7 +5,7 @@
 <section class="remedy-layout-wrapper">
     <div class="container">
         <h1 class="text-center mb-5 font-weight-light">Sign <b> Up</b></h1>
-        <div id="sign_chart" class=""></div>
+        <div id="sign_chart"></div>
         <div>
 </section>
 @endsection
