@@ -244,4 +244,14 @@ class AgentController extends Controller
         }
         return response()->json(["message" => "Error while deleting song..", 500]);
     }
+    
+    public function agentBackend()
+    {
+        return view('agent-backend');
+    }
+
+    public function agentFrontend()
+    {
+        return view('agent-frontend');
+    }
 }
