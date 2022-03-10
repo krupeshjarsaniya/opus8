@@ -53,7 +53,49 @@
                     <input type="number" class="form-control" id="sales_percentage" value="{{old('sales_percentage', $agent_info->sales_percentage ?? '')}}" name="sales_percentage" placeholder="Sales Percentage">
                 </div>
             </div>
-            @if (isset($agent_info) && !empty($agent_info->agent_songs) && count($agent_info->agent_songs) >= 1)
+
+             {{-- Start by dhaval --}}
+             <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <div class="remedy-input-icon-wrapper">
+                            <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i>
+                            <input type="text" class="form-control" id="hour_rate" value="{{old('hour_rate', $agent_info->hour_rate ?? '')}}" name="hour_rate" placeholder="Hour Rate">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <div class="remedy-input-icon-wrapper">
+                            <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i>
+                            <input type="text" class="form-control" id="sector_of_the_deal" value="{{old('sector_of_the_deal', $agent_info->sector_of_the_deal ?? '')}}" name="sector_of_the_deal" placeholder="Sector Of The Deal">
+                            {{-- <select class="form-control" id="sector_of_the_deal" name="sector_of_the_deal" placeholder="Sector Of The Deal">
+                                <option value="IT">IT</option>
+                                <option value="Industry">Industry</option>
+                                <option value="School">School</option>
+                                <option value="College">College</option>
+                            </select> --}}
+                        </div>
+
+                        {{-- <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select> --}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="remedy-input-icon-wrapper">
+                    <i><img src="{{ asset('assets/images/percentage-icon.svg') }}" alt="remedy"></i>
+                    <input type="text" class="form-control" id="agency_of_deal" value="{{old('agency_of_deal', $agent_info->agency_of_deal ?? '')}}" name="agency_of_deal" placeholder="Agency Of Deal">
+                </div>
+            </div>
+            {{-- End by dhaval --}}
+
+            {{-- @if (isset($agent_info) && !empty($agent_info->agent_songs) && count($agent_info->agent_songs) >= 1)
             <div class="row">
                 <table class="table table-responsive">
                     <thead>
@@ -74,9 +116,9 @@
                     </tbody>
                 </table>
             </div>
-            @endif
+            @endif --}}
             <div class="form-group">
-                <div class="hd-file-upload hd-form-bg-section" id="song_upload_wrapper">
+                <div class="hd-file-upload hd-form-bg-section d-none" id="song_upload_wrapper">
                     <label id="song_file-error" class="error d-none" for="song_file">This field is required</label>
                     <div class="hd-file-data">
                         <div class="d-flex align-items-center justify-content-center">
@@ -90,8 +132,9 @@
                     </div>
                 </div>
             </div>
+
             @if (isset($agent_info) && $agent_info->id)
-                <p>If you upload song than it will remove old song and upload new one.</p>
+                {{-- <p>If you upload song than it will remove old song and upload new one.</p> --}}
             @endif
             <div class="row beat-file-names">
                 <div class="col-md-12">
@@ -251,7 +294,8 @@
         var isRequiredProfile = "{{ !empty($agent_info->profile_pic) }}"
 
         $(".remedy-login-btn").on("click", function() {
-            if (myDropzone.files && myDropzone.files.length || agent_id) {
+            //if (myDropzone.files && myDropzone.files.length || agent_id) {
+            //if (agent_id) {
                 $("#agent-form-handler").validate({
                     ignore: [],
                     rules: {
@@ -261,10 +305,10 @@
                         },
                         "first_name": "required",
                         "last_name": "required",
-                        "songs[]": {
-                            required: true,
+                        /* "songs[]": {
+                            required: false,
                             accept: "audio/*",
-                        },
+                        }, */
                         "profile_pic": {
                             required: !isRequiredProfile,
                             accept: "image/*",
@@ -276,10 +320,10 @@
                         "email": "This field is required",
                         "first_name": "This field is required",
                         "last_name": "Please Choose an option",
-                        "songs[]": {
+                        /* "songs[]": {
                             required: "This field is required",
                             accept: "Invalid file type uploaded"
-                        },
+                        }, */
                         "profile_pic": {
                             required: "This field is required",
                             accept: "Invalid file type uploaded"
@@ -298,15 +342,16 @@
                     },
                     submitHandler: function(form, event) {
                         if ($(form).valid()) {
-                            if (myDropzone.files || myDropzone.files.length || agent_id) {
+                            //if (myDropzone.files || myDropzone.files.length || agent_id) {
+                            //if (agent_id) {
                                 var formData = new FormData(form);
                                 var url = form.action;
                                 var method = "POST";
-                                if (myDropzone.files || myDropzone.files.length) {
+                                /* if (myDropzone.files || myDropzone.files.length) {
                                     $.each(myDropzone.files, function(index, file) {
                                         formData.append('songs[]', file, file.name);
                                     });
-                                }
+                                } */
                                 var csrf_token = $('meta[name="csrf-token"]').attr("content");
                                 $.ajax({
                                     url: url,
@@ -349,14 +394,14 @@
                                         $(".loader_area").removeClass("show");
                                     },
                                 });
-                            }
+                            //}
                         }
                     }
                 });
-            } else {
+           /*  } else {
                 $("#song_file-error").removeClass("d-none");
                 return false;
-            }
+            } */
         });
     });
 </script>

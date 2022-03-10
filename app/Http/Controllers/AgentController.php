@@ -63,9 +63,10 @@ class AgentController extends Controller
      */
     public function store(AgentRequest $request)
     {
-        $songs = $request->file('songs');
+        // dd($request->all());
+        // $songs = $request->file('songs');
         $profile_pic = $request->file('profile_pic');
-        $input = $request->only(['email', 'first_name', 'last_name', 'sales_type', 'sales_percentage']);
+        $input = $request->only(['email', 'first_name', 'last_name', 'sales_type', 'sales_percentage','hour_rate','sector_of_the_deal','agency_of_deal']);
 
         try {
             $path = config('remedy.PATH.profiles_pic');
@@ -83,12 +84,12 @@ class AgentController extends Controller
                     mkdir($path, 0777, true);
                 }
                 $agent_songs['agent_id'] = $agent->id;
-                foreach ($songs as $song) {
-                    $name = strtotime("now") . mt_rand(0, 999999) . " - " . $song->getClientOriginalName();
-                    $song->move($path, $name);
-                    $agent_songs['song_name'] = $name;
-                    AgentSongs::create($agent_songs);
-                }
+                // foreach ($songs as $song) {
+                //     $name = strtotime("now") . mt_rand(0, 999999) . " - " . $song->getClientOriginalName();
+                //     $song->move($path, $name);
+                //     $agent_songs['song_name'] = $name;
+                //     AgentSongs::create($agent_songs);
+                // }
                 return response()->json(["", "message" => "Agent added successfully..."], 200);
             } else {
                 return response()->json(["message" => "Error while adding agent..."], 500);
@@ -139,6 +140,7 @@ class AgentController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // dd($request->all());
         $this->validate($request, [
             'email' => ['required', 'string'],
             'first_name' => ['required', 'string'],
@@ -146,7 +148,7 @@ class AgentController extends Controller
             'sales_type' => ['required', 'string'],
             'sales_percentage' => ['required', 'int'],
         ]);
-        $input = $request->only(['email', 'first_name', 'last_name', 'sales_type', 'sales_percentage']);
+        $input = $request->only(['email', 'first_name', 'last_name', 'sales_type', 'sales_percentage','hour_rate','sector_of_the_deal','agency_of_deal']);
         try {
             $agent_info = Agent::where('id', $id)->first();
             if (!$agent_info) {
@@ -164,7 +166,7 @@ class AgentController extends Controller
             }
             $agent_info->update($input);
             if ($request->hasFile('songs')) {
-                $songs = $request->file('songs');
+                // $songs = $request->file('songs');
                 $path = config('remedy.PATH.songs');
 
                 $agent_old_songs = AgentSongs::where('agent_id', $id)->get();
@@ -183,12 +185,12 @@ class AgentController extends Controller
                     mkdir($path, 0777, true);
                 }
                 $agent_songs['agent_id'] = $id;
-                foreach ($songs as $song) {
-                    $name = strtotime("now") . mt_rand(0, 999999) . " - " . $song->getClientOriginalName();
-                    $song->move($path, $name);
-                    $agent_songs['song_name'] = $name;
-                    AgentSongs::create($agent_songs);
-                }
+                // foreach ($songs as $song) {
+                //     $name = strtotime("now") . mt_rand(0, 999999) . " - " . $song->getClientOriginalName();
+                //     $song->move($path, $name);
+                //     $agent_songs['song_name'] = $name;
+                //     AgentSongs::create($agent_songs);
+                // }
             }
             return response()->json(["message" => "Agent updated successfully..."], 200);
         } catch (Exception $e) {
@@ -244,7 +246,7 @@ class AgentController extends Controller
         }
         return response()->json(["message" => "Error while deleting song..", 500]);
     }
-    
+
     public function agentBackend()
     {
         return view('agent-backend');
