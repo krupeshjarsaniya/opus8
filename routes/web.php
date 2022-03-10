@@ -3,6 +3,7 @@
 use App\Http\Controllers\AgentController;
 use App\Http\Controllers\IndustryController;
 use App\Http\Controllers\WeeklyBillingController;
+use App\Http\Controllers\MeetingController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
@@ -61,3 +62,7 @@ Route::get('/industry_chart', [IndustryController::class, 'industryChart'])->nam
 
 Route::get('/bill_form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
 Route::get('/bill_chart', [WeeklyBillingController::class, 'billChart'])->name('bill.chart');
+
+
+//METTING
+Route::get('/meeting_chart', [MeetingController::class, 'meetingChart'])->name('meetign.chart');

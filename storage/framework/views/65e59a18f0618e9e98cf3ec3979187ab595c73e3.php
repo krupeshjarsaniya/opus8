@@ -6,7 +6,7 @@
         <h1 class="text-center mb-5 font-weight-light">Sign Ups Broken down by <b>industry</b></h1>
         <div id="app">
           <div id="chart">
-              <!-- <img src="<?php echo e(asset('assets/images/avatar-img.png')); ?>" class="demo_image" /> -->
+              <img src="<?php echo e(asset('assets/images/avatar-img.png')); ?>" class="demo_image" />
             <apexchart type="donut" :options="chartOptions" :series="series"></apexchart>
           </div>
         </div>
