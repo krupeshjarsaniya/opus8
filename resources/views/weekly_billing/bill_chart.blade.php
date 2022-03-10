@@ -4,15 +4,15 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center mb-5 font-weight-light">Sign Ups Broken down by <b>industry</b></h1>
+        <h1 class="text-center mb-5 font-weight-light">Week 41 <b>Billings</b></h1>
         <div id="chartdiv"></div>
     <div>
 </section>
+@endsection
+@push('js')
 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-@endsection
-@push('js')
 <script type="text/javascript">
 	/**
  * ---------------------------------------

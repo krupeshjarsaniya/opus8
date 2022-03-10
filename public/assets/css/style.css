@@ -1323,5 +1323,26 @@ foreignObject .apexcharts-legend
 
   #chartdiv {
     width: 100%;
-    height: 500px;
+    height: 800px;
   }
+
+  #chart1{
+      height: 500px;
+      width: 600px;
+      margin: 90px auto;
+  }
+
+
+  @media(min-width: 280px) and (max-width: 767px)
+{
+    .apexcharts-legend
+    {
+        right: 70% !important;
+    }
+
+    #chart1 {
+     height: 100px;
+      width: 400px;
+      margin-top: 4px auto;
+    }
+}

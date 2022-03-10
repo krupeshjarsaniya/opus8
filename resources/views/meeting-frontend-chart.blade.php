@@ -90,7 +90,7 @@
                   hollow: {
                     margin: 15,
                     size: '25%',
-                    image: '{{ asset('assets/images/face33.png') }}',
+                    image: '{{ asset('assets/images/avatar-img.png') }}',
                     imageWidth: 64,
                     imageHeight: 64,
                     imageClipped: false

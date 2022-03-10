@@ -3,16 +3,15 @@
 <?php $__env->startSection('content'); ?>
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center mb-5 font-weight-light">Sign Ups Broken down by <b>industry</b></h1>
-        <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+        <h1 class="text-center mb-5 font-weight-light">Week 41 <b>Billings</b></h1>
         <div id="chartdiv"></div>
     <div>
 </section>
-
 <?php $__env->stopSection(); ?>
 <?php $__env->startPush('js'); ?>
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 <script type="text/javascript">
 	/**
  * ---------------------------------------

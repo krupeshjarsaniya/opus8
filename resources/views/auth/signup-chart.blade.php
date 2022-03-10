@@ -5,7 +5,7 @@
 <section class="remedy-layout-wrapper">
     <div class="container">
         <h1 class="text-center mb-5 font-weight-light">Sign <b> Up</b></h1>
-        <div id="chartdiv"></div>
+        <div id="chartdiv" class=""></div>
         <div>
 </section>
 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
@@ -38,35 +38,56 @@ root.setThemes([
 
 var data = [
   {
-    name: "Monica",
+    name: "Bella",
     steps: 45688,
     pictureSettings: {
       src: "{{ asset('assets/images/avatar-img.png') }}"
     }
   },
   {
-    name: "Joey",
+    name: "Sunny",
     steps: 35781,
     pictureSettings: {
       src: "{{ asset('assets/images/avatar-img.png') }}"
     }
   },
   {
-    name: "Ross",
+    name: "Taku",
+    steps: 35781,
+    pictureSettings: {
+      src: "{{ asset('assets/images/avatar-img.png') }}"
+    }
+  },
+  {
+    name: "Shamaura",
+    steps: 35781,
+    pictureSettings: {
+      src: "{{ asset('assets/images/avatar-img.png') }}"
+    }
+  },
+  {
+    name: "Sebastian",
+    steps: 35781,
+    pictureSettings: {
+      src: "{{ asset('assets/images/avatar-img.png') }}"
+    }
+  },
+  {
+    name: "Dan",
     steps: 25464,
     pictureSettings: {
       src: "{{ asset('assets/images/avatar-img.png') }}"
     }
   },
   {
-    name: "Rachel",
+    name: "Tyler",
     steps: 15465,
     pictureSettings: {
       src: "{{ asset('assets/images/avatar-img.png') }}"
     }
   },
   {
-    name: "Chandler",
+    name: "Ben",
     steps: 11561,
     pictureSettings: {
       src: "{{ asset('assets/images/avatar-img.png') }}"

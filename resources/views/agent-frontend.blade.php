@@ -64,7 +64,6 @@
                 chart: {
                   width: 310,
                   height:500,
-
                 },
                 legend: {
                   position: 'bottom'
