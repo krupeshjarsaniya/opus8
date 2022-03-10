@@ -4,14 +4,14 @@
 <section class="remedy-layout-wrapper">
     <div class="container">
         <h1 class="text-center mb-5 font-weight-light">Sign <b> Up</b></h1>
-        <div id="chartdiv"></div>
+        <div id="sign_chart" class=""></div>
         <div>
 </section>
+<?php $__env->stopSection(); ?>
+<?php $__env->startPush('js'); ?>
 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-<?php $__env->stopSection(); ?>
-<?php $__env->startPush('js'); ?>
 <script type="text/javascript">
 	/**
  * ---------------------------------------
@@ -27,7 +27,7 @@
 
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdiv");
+var root = am5.Root.new("sign_chart");
 
 // Set themes
 // https://www.amcharts.com/docs/v5/concepts/themes/
@@ -37,35 +37,56 @@ root.setThemes([
 
 var data = [
   {
-    name: "Monica",
+    name: "Bella",
     steps: 45688,
     pictureSettings: {
       src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
     }
   },
   {
-    name: "Joey",
+    name: "Sunny",
     steps: 35781,
     pictureSettings: {
       src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
     }
   },
   {
-    name: "Ross",
+    name: "Taku",
+    steps: 35781,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Shamaura",
+    steps: 35781,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Sebastian",
+    steps: 35781,
+    pictureSettings: {
+      src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
+    }
+  },
+  {
+    name: "Dan",
     steps: 25464,
     pictureSettings: {
       src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
     }
   },
   {
-    name: "Rachel",
+    name: "Tyler",
     steps: 15465,
     pictureSettings: {
       src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
     }
   },
   {
-    name: "Chandler",
+    name: "Ben",
     steps: 11561,
     pictureSettings: {
       src: "<?php echo e(asset('assets/images/avatar-img.png')); ?>"
