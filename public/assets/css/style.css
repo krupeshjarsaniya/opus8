@@ -1225,7 +1225,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 
-#chart {
+/*#chart {
     max-width: 59%;
     margin: 10% auto;
     padding: 0;
@@ -1318,7 +1318,7 @@ foreignObject .apexcharts-legend
         top: 29.2%;
         left: 57.9%;
     }
-}
+}*/
 
 
   #chartdiv {
@@ -1326,23 +1326,86 @@ foreignObject .apexcharts-legend
     height: 800px;
   }
 
-  #chart1{
-      height: 500px;
+
+/*Start By Rahul*/
+  #agentFrontendChart{
+      height: 600px;
       width: 600px;
       margin: 90px auto;
   }
 
-
-  @media(min-width: 280px) and (max-width: 767px)
-{
-    .apexcharts-legend
+  #agentFrontendChart .apexcharts-legend
     {
-        right: 70% !important;
+        right: 69% !important;
+        top: 31% !important;
+        width: 191px !important;
     }
 
-    #chart1 {
-     height: 100px;
-      width: 400px;
-      margin-top: 4px auto;
+    #agentFrontendChart .apexcharts-legend-text{
+        font-size: 16px !important;
+        font-weight: bolder !important;
     }
+
+    #agentFrontendChart .apexcharts-graphical
+    {
+       transform: translate(245px, 0px)!important;
+    }
+
+    #agentFrontendChart .apexcharts-legend-marker {
+        width: 25px !important;
+        height: 15px !important;
+        margin-right: 3px;
+        border-radius: 3px !important;
+        margin-right: 10px;
+    }
+
+
+@media(min-width: 280px) and (max-width: 767px)
+{
+    #agentFrontendChart .apexcharts-legend
+    {
+       display: block !important;
+        right: 33% !important;
+        width: 100% !important;
+        left: 33% !important;
+        top: 70% !important;
+        height: 150px !important;
+    }
+
+    #agentFrontendChart .apexcharts-legend-marker {
+        width: 25px !important;
+        height: 15px !important;
+        margin-right: 3px;
+        border-radius: 3px !important;
+        margin-right: 10px;
+    }
+
+    #agentFrontendChart .apexcharts-graphical
+    {
+       transform: translate(29px, 0px)!important;
+
+    }
+
+    #agentFrontendChart .apexcharts-legend-text{
+        font-size: 16px !important;
+        font-weight: bolder !important;
+    }
+
+    #agentFrontendChart {
+      height: 500px !important;
+      width: 350px;
+      margin-top: 5px auto;
+    }
+
 }
+
+@media(min-width: 768px) and (max-width: 1024px)
+{
+    #agentFrontendChart .apexcharts-legend
+    {
+        right: 65% !important;
+    }
+
+}
+
+/*End By Rahul
