@@ -18,7 +18,30 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="https://cdn.jsdelivr.net/npm/react-apexcharts@1.3.6/dist/react-apexcharts.iife.min.js"></script>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
+
+  $(document).ready(function(){
+        
+        // alert('hii');     
+
+            if ($(window).width() <= 767) 
+            {  
+             $('.apexcharts-theme-light').css('height','500');
+             $('.apexcharts-svg').attr('height','500');
+             $('.apexcharts-svg foreignObject').css('height','500');
+            }
+            else
+            {
+
+               $('.apexcharts-theme-light').css('width','800');
+               $('.apexcharts-svg').attr('width','800');
+               $('.apexcharts-svg foreignObject').css('width','800'); 
+            }  
+            
+        })
+
   var _seed = 42;
   Math.random = function() {
     _seed = _seed * 16807 % 2147483647;
@@ -37,6 +60,7 @@
             options: {
 
               chart: {
+                
                 height: 350,
                 type: 'radialBar',
               },
@@ -103,13 +127,14 @@
                    
                 }
             },
+
           };
         }
 
         render() {
           return (
             <div>
-              <div id="chart">
+              <div id="meetignChart">
                 <ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={350} />
               </div>
               <div id="html-dist"></div>
