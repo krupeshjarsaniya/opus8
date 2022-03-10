@@ -67,7 +67,7 @@ var data = [
   },
   {
     name: "Sebastian",
-    steps: 100,
+    steps: 20000,
     pictureSettings: {
       src: "{{ asset('assets/images/avatar-img.png') }}"
     }
