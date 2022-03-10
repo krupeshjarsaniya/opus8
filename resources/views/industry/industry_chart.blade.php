@@ -30,7 +30,7 @@
             // $('.apexcharts-theme-light').css('width','800');
             // $('.apexcharts-svg').attr('width','800');
             // $('.apexcharts-svg foreignObject').css('width','800');
-            $(".apexcharts-pie circle").after('<img src="https://www.w3schools.com/tags/img_girl.jpg">');
+            $(".apexcharts-pie circle").append('<img src="https://www.w3schools.com/tags/img_girl.jpg">');
             if ($(window).width() <= 767) 
             {  
               $(".apexcharts-pie>g").css('transform','translate(0, 0) scale(3)');
