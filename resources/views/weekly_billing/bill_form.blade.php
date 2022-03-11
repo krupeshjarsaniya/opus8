@@ -1,73 +1,134 @@
 @extends('layouts.app')
-@section('title', 'Login')
-@section('body-class', 'hd-auth-body')
+@section('title', 'Weekly Billing')
+@section('body-class', 'hd-billing-body')
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
         <h1 class="text-center font-weight-light">Weekly <b>Billings</b></h1>
-        <form>
+
             <div class="row mt-5">
-            	<div class="col-lg-4"><h5>Agent</h5></div>
-            	<div class="col-lg-4"><h5>Weekly Billings</h5></div>
-            	<div class="col-lg-4"><h5>Average Close Out</h5></div>
+            	<div class="col-lg-3"><h5>Agent</h5></div>
+            	<div class="col-lg-3"><h5>Weekly Billings</h5></div>
+            	<div class="col-lg-3"><h5>Average Close Out</h5></div>
+            	<div class="col-lg-3"><h5>Action</h5></div>
             </div>
 
-            <div class="row mt-3 border-top border-gray">
-                <div class="col-lg-4 px-3  mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
-                    <label><h5 class="pl-lg-3 pl-1">Ben</h5></label>
-                </div>
-            	<div class="col-lg-4 px-3 bg-2 form-group mt-2">
-            		<div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control " name="" value="" autocomplete="" autofocus placeholder="">
-                    </div>
-            	</div>
-            	<div class="col-lg-4 px-3 bg-2 form-group mt-2">
-                    <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control " name="" value="" autocomplete="" autofocus placeholder="">
-                    </div>
-                </div>
-            </div>
 
-            <div class="row mt-3 border-top border-gray">
-                <div class="col-lg-4 px-3  mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
-                    <label><h5 class="pl-lg-3 pl-1">Ben</h5></label>
-                </div>
-                <div class="col-lg-4 px-3 bg-2 form-group mt-2">
-                    <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control " name="" value="" autocomplete="" autofocus placeholder="">
-                    </div>
-                </div>
-                <div class="col-lg-4 px-3 bg-2 form-group mt-2">
-                    <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control " name="" value="" autocomplete="" autofocus placeholder="">
-                    </div>
-                </div>
+            <div id="agentBilling">
+                {!! $html !!}
             </div>
-
-            <div class="row mt-3 border-top border-gray">
-                <div class="col-lg-4 px-3  mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
-                    <label><h5 class="pl-lg-3 pl-1">Ben</h5></label>
-                </div>
-                <div class="col-lg-4 px-3 bg-2 form-group mt-2">
-                    <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control " name="" value="" autocomplete="" autofocus placeholder="">
-                    </div>
-                </div>
-                <div class="col-lg-4 px-3 bg-2 form-group mt-2">
-                    <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control " name="" value="" autocomplete="" autofocus placeholder="">
-                    </div>
-                </div>
-            </div>
-
+            @if ($show_loadmore)
             <div class="form-btn-block">
-                <button type="submit" class="remedy-login-btn">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
+                <button type="submit" class="remedy-login-btn"><span id="load_more">Load More</span> <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
             </div>
-
-        <form>
+            @endif
     <div>
 </section>
 @endsection
+
+@push('scripts')
+<script>
+    $(document).ready(function() {
+        let page = 1;
+        $(".remedy-login-btn").on("click", function() {
+            page++;
+            $.ajax({
+                url: "{{ url('/agent-loadmore-biling') }}?page=" + page,
+                type: 'POST',
+                dataType: 'json',
+                cache: false,
+                contentType: false,
+                processData: false,
+                headers: {
+                    "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
+                },
+                beforeSend: function() {
+                    $(".remedy-login-btn #load_more").text("loading");
+                    $(".loader_area").addClass("show");
+                },
+                complete : function() {
+                    $(".remedy-login-btn #load_more").text("Load More");
+                    $(".loader_area").removeClass("show");
+                },
+                success: function(response) {
+                    if (response.status) {
+                        $("#agentBilling").append(response.html);
+                        if (!response.show_loadmore) {
+                            $(".remedy-login-btn").remove();
+                        }
+                    }
+                },
+                error: function(error) {
+                    var message = null;
+                    if (typeof error.responseJSON.errors != "undefined") {
+                        $.each(error.responseJSON.errors, function(id, topic) {
+                            message = topic[0];
+                            return false;
+                        });
+                    }
+                    if (!message) {
+                        message = error.responseJSON.message;
+                    }
+                    toastr.error(message);
+                }
+            });
+        })
+    });
+
+    function SubmitBillings(ele)
+    {
+        var formId = $(ele).data('id');
+        console.log(formId);
+        let myform = document.getElementById(formId);
+        let fd = new FormData(myform );
+
+        $.ajax({
+            url: "{{ route('bill.chart.submit') }}",
+            type: 'POST',
+            dataType: 'json',
+            data:fd,
+            cache: false,
+            contentType: false,
+            processData: false,
+            headers: {
+                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
+            },
+            beforeSend: function() {
+                $(".remedy-login-btn #load_more").text("loading");
+                $(".loader_area").addClass("show");
+            },
+            complete : function() {
+                $(".remedy-login-btn #load_more").text("Load More");
+                $(".loader_area").removeClass("show");
+            },
+            success: function(response, textStatus, jqXHR) {
+                if (jqXHR.status == 200) {
+                    toastr.success(response.message);
+                }
+            },
+            error: function(error) {
+                var message = null;
+                if (error.responseJSON) {
+                    if (typeof error.responseJSON.errors != "undefined") {
+                        $.each(error.responseJSON.errors, function(id, topic) {
+                            message = topic[0];
+                            return false;
+                        });
+                    }
+                    if (!message) {
+                        message = error.responseJSON.message;
+                    }
+                }
+                if (!message) {
+                    message = 'Something went wrong'
+                }
+                toastr.error(message);
+            },
+            complete: function() {
+                $(".loader_area").removeClass("show");
+            },
+
+        });
+    }
+</script>
+@endpush

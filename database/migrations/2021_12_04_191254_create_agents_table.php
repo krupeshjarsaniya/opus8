@@ -21,6 +21,7 @@ class CreateAgentsTable extends Migration
             $table->string('email');
             $table->string('sales_type');
             $table->string('sales_percentage');
+
             $table->timestamps();
         });
     }
