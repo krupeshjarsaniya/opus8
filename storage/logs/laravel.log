@@ -2261,7 +2261,8 @@
 #33 D:\\xampp\\htdocs\\opus8\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #34 {main}
 "} 
-[2022-03-10 08:15:47] local.ERROR: syntax error, unexpected '<<' (T_SL), expecting end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting end of file at D:\\xampp\\htdocs\\opus8\outes\\web.php:50)
+[2022-03-10 08:15:47] local.ERROR: syntax error, unexpected '<<' (T_SL), expecting end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting end of file at D:\\xampp\\htdocs\\opus8\
+outes\\web.php:50)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\xampp\\\\htdocs...')
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('D:\\\\xampp\\\\htdocs...')
@@ -2291,7 +2292,8 @@
 #25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #26 {main}
 "} 
-[2022-03-10 08:15:48] local.ERROR: syntax error, unexpected '<<' (T_SL), expecting end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting end of file at D:\\xampp\\htdocs\\opus8\outes\\web.php:50)
+[2022-03-10 08:15:48] local.ERROR: syntax error, unexpected '<<' (T_SL), expecting end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting end of file at D:\\xampp\\htdocs\\opus8\
+outes\\web.php:50)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\xampp\\\\htdocs...')
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('D:\\\\xampp\\\\htdocs...')
@@ -2773,7 +2775,8 @@ Did you mean this?
 #5 D:\\xampp\\htdocs\\opus8\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #6 {main}
 "} 
-[2022-03-11 05:07:11] local.ERROR: Call to undefined function assets() (View: D:\xampp\htdocs\opus8\resources\views\include\styles.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/include/styles.blade.php","data":{"module_route":"<pre class=sf-dump id=sf-dump-2036291002 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"35 characters\">http://localhost/opus8/public/agent</span>\"
+[2022-03-11 05:07:11] local.ERROR: Call to undefined function assets() (View: D:\xampp\htdocs\opus8\resources\views\include\styles.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/include/styles.blade.php","data":{"module_route":"<pre class=sf-dump id=sf-dump-2036291002 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"35 characters\">http://localhost/opus8/public/agent</span>\"
 </pre><script>Sfdump(\"sf-dump-2036291002\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
 ","errors":"<pre class=sf-dump id=sf-dump-282868413 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1245</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
@@ -2782,169 +2785,251 @@ Did you mean this?
 ","show_loadmore":"<pre class=sf-dump id=sf-dump-1704357777 data-indent-pad=\"  \"><span class=sf-dump-const>true</span>
 </pre><script>Sfdump(\"sf-dump-1704357777\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
 ","html":"<pre class=sf-dump id=sf-dump-1366958473 data-indent-pad=\"  \">\"\"\"
-<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641290262684705 - TAKU HEAD.jpg&quot; alt=&quot;Taku&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641290262684705 - TAKU HEAD.jpg&quot; alt=&quot;Taku&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Taku&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Taku&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Kunaka&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Kunaka&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/24&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/24&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641291223332662 - BEN HEAD.jpg&quot; alt=&quot;Ben&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641291223332662 - BEN HEAD.jpg&quot; alt=&quot;Ben&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Ben&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Ben&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;L&amp;#039;Agey&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;L&amp;#039;Agey&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/25&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/25&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641292006780244 - SEB HEAD.jpg&quot; alt=&quot;Seb&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641292006780244 - SEB HEAD.jpg&quot; alt=&quot;Seb&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Seb&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Seb&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;St Louis&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;St Louis&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/26&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/26&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641295329128824 - BELLA HEAD.jpg&quot; alt=&quot;Bella&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641295329128824 - BELLA HEAD.jpg&quot; alt=&quot;Bella&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Bella&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Bella&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Heath&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Heath&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/27&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/27&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;div class=&quot;user-avatar&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641302949502839 - DAN HEAD.jpg&quot; alt=&quot;Dan&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">                &lt;img src=&quot;http://localhost/storage/profiles_pic/1641302949502839 - DAN HEAD.jpg&quot; alt=&quot;Dan&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Dan&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Dan&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;div class=&quot;user-details preview-btn&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Perry&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;h5&gt;Perry&lt;/h5&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/28&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">            &lt;a href=&quot;http://localhost/opus8/public/agent/28&quot; class=&quot;preview-btn&quot;&gt;Preview&lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">    &lt;/td&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
-<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\\
+<span class=sf-dump-str title=\"2454 characters\">&lt;/tr&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+\
 </span></span>
 \"\"\"
 </pre><script>Sfdump(\"sf-dump-1366958473\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function assets() (View: D:\\xampp\\htdocs\\opus8\esources\\views\\include\\styles.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/include/styles.blade.php:10)
+"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function assets() (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\include\\styles.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/include/styles.blade.php:10)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require()
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
@@ -2954,7 +3039,8 @@ Did you mean this?
 #5 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
 #6 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #7 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#8 D:\\xampp\\htdocs\\opus8\esources\\views/layouts/app.blade.php(17): Illuminate\\View\\View->render()
+#8 D:\\xampp\\htdocs\\opus8\
+esources\\views/layouts/app.blade.php(17): Illuminate\\View\\View->render()
 #9 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #10 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #11 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -2963,7 +3049,8 @@ Did you mean this?
 #14 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
 #15 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #16 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#17 D:\\xampp\\htdocs\\opus8\esources\\views/agent-list.blade.php(93): Illuminate\\View\\View->render()
+#17 D:\\xampp\\htdocs\\opus8\
+esources\\views/agent-list.blade.php(93): Illuminate\\View\\View->render()
 #18 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #19 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #20 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -3248,13 +3335,17 @@ Did you mean this?
 #45 D:\\xampp\\htdocs\\opus8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #46 {main}
 "} 
-[2022-03-11 06:20:19] local.ERROR: Undefined variable: agent (View: D:\xampp\htdocs\opus8\resources\views\weekly_billing\bill_form.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/weekly_billing/bill_form.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1590874915 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1247</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-11 06:20:19] local.ERROR: Undefined variable: agent (View: D:\xampp\htdocs\opus8\resources\views\weekly_billing\bill_form.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/weekly_billing/bill_form.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1590874915 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1247</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1590874915\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agent (View: D:\\xampp\\htdocs\\opus8\esources\\views\\weekly_billing\\bill_form.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/weekly_billing/bill_form.blade.php:14)
+"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agent (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\weekly_billing\\bill_form.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/weekly_billing/bill_form.blade.php:14)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/weekly_billing/bill_form.blade.php(14): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 13, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/weekly_billing/bill_form.blade.php(14): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 13, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -3366,7 +3457,8 @@ Did you mean this?
 #52 D:\\xampp\\htdocs\\opus8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #53 {main}
 "} 
-[2022-03-11 06:24:40] local.ERROR: Undefined variable: variable (View: D:\xampp\htdocs\opus8\resources\views\weekly_billing\bill_form.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/weekly_billing/bill_form.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-230526592 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1247</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-11 06:24:40] local.ERROR: Undefined variable: variable (View: D:\xampp\htdocs\opus8\resources\views\weekly_billing\bill_form.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/weekly_billing/bill_form.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-230526592 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1247</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-230526592\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -3792,9 +3884,12 @@ Did you mean this?
   #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1250203990\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: variable (View: D:\\xampp\\htdocs\\opus8\esources\\views\\weekly_billing\\bill_form.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/weekly_billing/bill_form.blade.php:15)
+"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: variable (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\weekly_billing\\bill_form.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/weekly_billing/bill_form.blade.php:15)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/weekly_billing/bill_form.blade.php(15): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 14, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/weekly_billing/bill_form.blade.php(15): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 14, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -3906,7 +4001,8 @@ Did you mean this?
 #52 D:\\xampp\\htdocs\\opus8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #53 {main}
 "} 
-[2022-03-11 06:24:52] local.ERROR: Undefined variable: agrnt (View: D:\xampp\htdocs\opus8\resources\views\weekly_billing\bill_form.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/weekly_billing/bill_form.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-319555061 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1247</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-11 06:24:52] local.ERROR: Undefined variable: agrnt (View: D:\xampp\htdocs\opus8\resources\views\weekly_billing\bill_form.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/weekly_billing/bill_form.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-319555061 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1247</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-319555061\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -4332,9 +4428,12 @@ Did you mean this?
   #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
 </samp>}
 </pre><script>Sfdump(\"sf-dump-267887751\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agrnt (View: D:\\xampp\\htdocs\\opus8\esources\\views\\weekly_billing\\bill_form.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/weekly_billing/bill_form.blade.php:15)
+"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agrnt (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\weekly_billing\\bill_form.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/weekly_billing/bill_form.blade.php:15)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/weekly_billing/bill_form.blade.php(15): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 14, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/weekly_billing/bill_form.blade.php(15): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 14, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -4548,7 +4647,8 @@ Did you mean this?
 #48 D:\\xampp\\htdocs\\opus8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 {main}
 "} 
-[2022-03-11 07:20:21] local.ERROR: Undefined variable: agent (View: D:\xampp\htdocs\opus8\resources\views\ajax\ajax-billing.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/ajax/ajax-billing.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-2023462713 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-11 07:20:21] local.ERROR: Undefined variable: agent (View: D:\xampp\htdocs\opus8\resources\views\ajax\ajax-billing.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/ajax/ajax-billing.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-2023462713 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-2023462713\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -4586,9 +4686,12 @@ Did you mean this?
 </pre><script>Sfdump(\"sf-dump-747742288\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
 ","show_loadmore":"<pre class=sf-dump id=sf-dump-1058811214 data-indent-pad=\"  \"><span class=sf-dump-const>true</span>
 </pre><script>Sfdump(\"sf-dump-1058811214\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agent (View: D:\\xampp\\htdocs\\opus8\esources\\views\\ajax\\ajax-billing.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/ajax/ajax-billing.blade.php:6)
+"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agent (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\ajax\\ajax-billing.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/ajax/ajax-billing.blade.php:6)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/ajax/ajax-billing.blade.php(6): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 6, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/ajax/ajax-billing.blade.php(6): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 6, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -4704,13 +4807,17 @@ Did you mean this?
 #54 D:\\xampp\\htdocs\\opus8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #55 {main}
 "} 
-[2022-03-11 08:13:06] local.ERROR: Undefined variable: value (View: D:\xampp\htdocs\opus8\resources\views\industry\industry.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/industry/industry.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1951369925 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1247</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-11 08:13:06] local.ERROR: Undefined variable: value (View: D:\xampp\htdocs\opus8\resources\views\industry\industry.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/industry/industry.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1951369925 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1247</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1951369925\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: value (View: D:\\xampp\\htdocs\\opus8\esources\\views\\industry\\industry.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/industry/industry.blade.php:96)
+"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: value (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\industry\\industry.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/industry/industry.blade.php:96)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 95, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 95, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)

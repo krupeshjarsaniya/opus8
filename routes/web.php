@@ -7,6 +7,7 @@ use App\Http\Controllers\MeetingController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\PslsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -46,9 +47,12 @@ Route::group(['prefix' => '/', 'namespace' => ''], $appRoutes);
 Route::get('/signup', [LoginController::class, 'signup'])->name('signup');
 Route::get('/signup-chart', [LoginController::class, 'signupChart'])->name('signup.chart');
 
-//AGENT BACKEND
-Route::get('/agent-backend', [AgentController::class, 'agentBackend'])->name('agent.backend');
-Route::get('/agent-frontend', [AgentController::class, 'agentFrontend'])->name('agent.frontend');
+//Psls
+Route::prefix('/psls')->group(function () {
+    Route::get('/', [PslsController::class, 'psls'])->name('psls');
+    Route::post('/store', [PslsController::class, 'pslsStore'])->name('psls.store');
+    Route::get('/agent-chart/{agentId}', [PslsController::class, 'pslsAgentChart'])->name('agent.chart');
+});
 
 //INDUSTRY
 Route::get('/industry', [IndustryController::class, 'industry'])->name('industry');
