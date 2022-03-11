@@ -41,22 +41,22 @@
                             <div class="row m-0">
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -65,81 +65,22 @@
                             <div class="row m-0">
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 border-top border-gray">
-                <div class="col-lg-2 mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-3 rounded-circle p-0">
-                    <label><h5 class="pl-3">Ben</h5></label>
-                </div>
-                <div class="col-lg-10 mt-2">
-                    <div class="row m-0">
-                        <div class="col-lg-6 m-0 p-0">
-                            <div class="row m-0">
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 m-0 p-0">
-                            <div class="row m-0">
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -159,22 +100,22 @@
                             <div class="row m-0">
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -183,22 +124,22 @@
                             <div class="row m-0">
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -218,22 +159,22 @@
                             <div class="row m-0">
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                      <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -242,22 +183,81 @@
                             <div class="row m-0">
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-0 " name="" value="" autocomplete="" autofocus placeholder="">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 border-top border-gray">
+                <div class="col-lg-2 mt-2">
+                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-3 rounded-circle p-0">
+                    <label><h5 class="pl-3">Ben</h5></label>
+                </div>
+                <div class="col-lg-10 mt-2">
+                    <div class="row m-0">
+                        <div class="col-lg-6 m-0 p-0">
+                            <div class="row m-0">
+                                <div class="col-lg-3">
+                                     <div class="remedy-input-icon-wrapper">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                     <div class="remedy-input-icon-wrapper">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                     <div class="remedy-input-icon-wrapper">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                     <div class="remedy-input-icon-wrapper">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 m-0 p-0">
+                            <div class="row m-0">
+                                <div class="col-lg-3">
+                                    <div class="remedy-input-icon-wrapper">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="remedy-input-icon-wrapper">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="remedy-input-icon-wrapper">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="remedy-input-icon-wrapper">
+                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
                                     </div>
                                 </div>
                             </div>
