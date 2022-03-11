@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('title', 'Agent Preview'); ?>
 <?php $__env->startSection('content'); ?>
 <section class="remedy-layout-wrapper">
@@ -79,8 +78,13 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group">
                                     <div class="remedy-input-icon-wrapper">
-                                        <i><img src="<?php echo e(asset('assets/images/user-icon.svg')); ?>" alt="remedy"></i>
-                                        <input type="text" class="form-control" disabled value="<?php echo e($agent_info->sector_of_the_deal); ?>" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sector Of The Deal">
+                                        
+                                        <select class="form-select form-control" disabled name="sector_of_the_deal" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1" <?php if($agent_info->sector_of_the_deal == 1): ?> selected <?php endif; ?>>It</option>
+                                            <option value="2" <?php if($agent_info->sector_of_the_deal == 2): ?> selected <?php endif; ?>>Medical</option>
+                                            <option value="3" <?php if($agent_info->sector_of_the_deal == 3): ?> selected <?php endif; ?>>Bissuness</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>

@@ -37,4 +37,5 @@
     </div>
 </section>
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\opus8\resources\views/agent-add.blade.php ENDPATH**/ ?>

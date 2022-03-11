@@ -67,12 +67,18 @@
                 <div class="col-6">
                     <div class="form-group">
                         <div class="remedy-input-icon-wrapper">
-                            <i><img src="<?php echo e(asset('assets/images/user-icon.svg')); ?>" alt="remedy"></i>
-                            <input type="text" class="form-control" id="sector_of_the_deal" value="<?php echo e(old('sector_of_the_deal', $agent_info->sector_of_the_deal ?? '')); ?>" name="sector_of_the_deal" placeholder="Sector Of The Deal">
                             
+                            
+                            
+
+                            <select class="form-select form-control" name="sector_of_the_deal" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1" <?php if($agent_info->sector_of_the_deal == 1): ?> selected <?php endif; ?>>It</option>
+                                <option value="2" <?php if($agent_info->sector_of_the_deal == 2): ?> selected <?php endif; ?>>Medical</option>
+                                <option value="3" <?php if($agent_info->sector_of_the_deal == 3): ?> selected <?php endif; ?>>Bissuness</option>
+                            </select>
                         </div>
 
-                        
                     </div>
                 </div>
             </div>
