@@ -170,7 +170,7 @@ img {
 .remedy-layout-wrapper::before {
     position: absolute;
     content: "";
-    background: url(/images/remedy-umbrella-bg-image.png?4c9bf4196c83975faddf73ce557d016a) no-repeat;
+    background: url(../../images/remedy-umbrella-bg-image.png?4c9bf4196c83975faddf73ce557d016a) no-repeat;
     background-position: bottom;
     background-size: contain;
     width: 100%;
@@ -1323,25 +1323,59 @@ input[type="range"]::-webkit-slider-thumb {
 
 /*Start Meeting Chart*/
 
+
+#meetignChart .apexcharts-legend-series
+{
+    margin: 8px 5px !important;
+}
+
+#meetignChart
+{
+    height: 118px !important;
+}
+
+
+
+#meetignChart .apx-legend-position-right
+  {
+    right: 0% !important;
+    /*top : 60% !important;*/
+    /*height: 251px !important;*/
+  }
+
 @media(min-width: 280px) and (max-width: 767px)
 {
 
-    #meetignChart{
-      height: 295px !important;
+  #meetignChart{
+      height: 350px !important;
   }
   #meetignChart .apx-legend-position-right
   {
     right: 32% !important;
-    top : 40% !important;
+    top : 60% !important;
     height: 251px !important;
-
   }
+    #meetignChart .apexcharts-legend-series
+    {
+        margin: 2px 5px !important;
+    }
 
 
     #meetignChart .apexcharts-graphical
     {
        transform: translate(87px, 0px)!important;
     }
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px)
+{
+    #meetignChart .apx-legend-position-right
+      {
+        right: 26% !important;
+       
+
+      }
 
 }
 
