@@ -4,9 +4,10 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center font-weight-light">PSL<b>s</b></h1>
+        <h1 class="text-center font-weight-light mb-3">PSL<b>s</b></h1>
+        <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 0 auto"></div>
         <form>
-
+            
             <div class="row mt-5">
                 <div class="col-lg-2"><h5>Agent</h5></div>
                 <div class="col-lg-10">
@@ -78,12 +79,7 @@
                     </div>
                 </div>
             </div>
-            
 
-
-            
-            
-                  
             <div class="form-btn-block">
                 <button type="submit" class="remedy-login-btn">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
             </div>
@@ -91,3 +87,6 @@
     <div>
 </section>
 @endsection
+@push('js')
+    
+@endpush

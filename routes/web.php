@@ -56,7 +56,7 @@ Route::get('/industry-chart', [IndustryController::class, 'industryChart'])->nam
 Route::post('/agent-loadmore-industry', [IndustryController::class, 'load_agents_industry'])->name('industry.chart.billing');
 Route::post('/agent-submit-industry', [IndustryController::class, 'submit_agents_industry'])->name('industry.chart.submit');
 
-// Weekly Billing
+// WEEKLY BILLING
 Route::get('/bill-form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
 Route::get('/bill-chart', [WeeklyBillingController::class, 'billChart'])->name('bill.chart');
 Route::post('/agent-loadmore-biling', [WeeklyBillingController::class, 'load_agents_billing'])->name('bill.chart.billing');

@@ -4,7 +4,8 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center font-weight-light">Sign Ups Broken down by <b class="">industry</b></h1>
+        <h1 class="text-center font-weight-light mb-3">Sign Ups Broken down by <b class="">industry</b></h1>
+        <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 0 auto"></div>
         <div class="row mt-5">
             <div class="col-lg-2"><h6>Agent</h6></div>
             <div class="col-lg-10">
@@ -17,122 +18,17 @@
                             <div class="col-lg-3"><h6>Hospitality</h6></div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 border-top border-gray">
-                <div class="col-lg-2 mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-3 rounded-circle p-0">
-                    <label><h5 class="pl-3">Ben</h5></label>
-                </div>
-                <div class="col-lg-10 mt-2">
-                    <div class="row m-0">
-                        <div class="col-lg-6 m-0 p-0">
-                            <div class="row m-0">
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 m-0 p-0">
-                            <div class="row m-0">
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-lg-6">
+                        <div class="row m-0">
+                            <div class="col-lg-3"><h6>Logistics</h6></div>
+                            <div class="col-lg-3"><h6>Construction</h6></div>
+                            <div class="col-lg-3"><h6 class="pl-2">Industrial</h6></div>
+                            <div class="col-lg-3"><h6>Finance</h6></div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="row mt-4 border-top border-gray">
-                <div class="col-lg-2 mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-3 rounded-circle p-0">
-                    <label><h5 class="pl-3">Ben</h5></label>
-                </div>
-                <div class="col-lg-10 mt-2">
-                    <div class="row m-0">
-                        <div class="col-lg-6 m-0 p-0">
-                            <div class="row m-0">
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                     <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 m-0 p-0">
-                            <div class="row m-0">
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="remedy-input-icon-wrapper">
-                                        <input type="text" class=" form-control px-1 " name="" value="" autocomplete="" autofocus placeholder="">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-lg-1">
+                        <div class="row m-0">
+                            <div class="col-lg-3"><h6>Action</h6></div>
                         </div>
                     </div>
                 </div>
