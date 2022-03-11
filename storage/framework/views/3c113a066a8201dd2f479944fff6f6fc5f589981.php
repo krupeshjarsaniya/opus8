@@ -65,51 +65,36 @@
                                 <input type="email" disabled value="<?php echo e($agent_info->sales_percentage); ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sales Percentage">
                             </div>
                         </div>
-                        <div class="remedy-music-player-box-wrapper">
-                            <div class="remedy-music-player-user-details">
-                                <div class="jAudio">
-                                    <audio></audio>
-                                    <div class="jAudio--ui">
-                                        <div class="jAudio--thumb"></div>
-                                        <div class="jAudio--status-bar">
-                                            <div class="jAudio--details"></div>
-                                            <div class="jAudio--controls">
-                                                <ul>
-                                                    <li>
-                                                        <button class="jAudio--control jAudio--control-prev" data-action="prev">
-                                                            <span></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button class="jAudio--control jAudio--control-play" data-action="play">
-                                                            <span></span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button class="jAudio--control jAudio--control-next" data-action="next">
-                                                            <span></span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="jAudio--volume-bar"></div>
-                                            <div class="jAudio--progress-bar">
-                                                <div class="jAudio--progress-bar-wrapper">
-                                                    <div class="jAudio--progress-bar-played">
-                                                        <span class="jAudio--progress-bar-pointer"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="jAudio--time">
-                                                <span class="jAudio--time-elapsed">00:00</span>
-                                                <span class="jAudio--time-total">00:00</span>
-                                            </div>
-                                        </div>
+
+                        
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <div class="remedy-input-icon-wrapper">
+                                        <i><img src="<?php echo e(asset('assets/images/user-icon.svg')); ?>" alt="remedy"></i>
+                                        <input type="text" disabled value="<?php echo e($agent_info->hour_rate); ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hour Rate">
                                     </div>
-                                    <div class="jAudio--playlist"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <div class="remedy-input-icon-wrapper">
+                                        <i><img src="<?php echo e(asset('assets/images/user-icon.svg')); ?>" alt="remedy"></i>
+                                        <input type="text" class="form-control" disabled value="<?php echo e($agent_info->sector_of_the_deal); ?>" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sector Of The Deal">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="remedy-input-icon-wrapper">
+                                <i><img src="<?php echo e(asset('assets/images/percentage-icon.svg')); ?>" alt="remedy"></i>
+                                <input type="text" disabled value="<?php echo e($agent_info->agency_of_deal); ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Agency Of Deal">
+                            </div>
+                        </div>
+                        
+
+
+                        
                     </div>
                 </div>
             </div>
@@ -187,4 +172,5 @@
     })();
 </script>
 <?php $__env->stopPush(); ?>
+
 <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\opus8\resources\views/agent-preview.blade.php ENDPATH**/ ?>

@@ -53,6 +53,38 @@
                     <input type="number" class="form-control" id="sales_percentage" value="<?php echo e(old('sales_percentage', $agent_info->sales_percentage ?? '')); ?>" name="sales_percentage" placeholder="Sales Percentage">
                 </div>
             </div>
+
+             
+             <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <div class="remedy-input-icon-wrapper">
+                            <i><img src="<?php echo e(asset('assets/images/user-icon.svg')); ?>" alt="remedy"></i>
+                            <input type="text" class="form-control" id="hour_rate" value="<?php echo e(old('hour_rate', $agent_info->hour_rate ?? '')); ?>" name="hour_rate" placeholder="Hour Rate">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <div class="remedy-input-icon-wrapper">
+                            <i><img src="<?php echo e(asset('assets/images/user-icon.svg')); ?>" alt="remedy"></i>
+                            <input type="text" class="form-control" id="sector_of_the_deal" value="<?php echo e(old('sector_of_the_deal', $agent_info->sector_of_the_deal ?? '')); ?>" name="sector_of_the_deal" placeholder="Sector Of The Deal">
+                            
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="remedy-input-icon-wrapper">
+                    <i><img src="<?php echo e(asset('assets/images/percentage-icon.svg')); ?>" alt="remedy"></i>
+                    <input type="text" class="form-control" id="agency_of_deal" value="<?php echo e(old('agency_of_deal', $agent_info->agency_of_deal ?? '')); ?>" name="agency_of_deal" placeholder="Agency Of Deal">
+                </div>
+            </div>
+            
+
             
             <div class="form-group">
                 <div class="hd-file-upload hd-form-bg-section d-none" id="song_upload_wrapper">
@@ -69,8 +101,9 @@
                     </div>
                 </div>
             </div>
+
             <?php if(isset($agent_info) && $agent_info->id): ?>
-                <p>If you upload song than it will remove old song and upload new one.</p>
+                
             <?php endif; ?>
             <div class="row beat-file-names">
                 <div class="col-md-12">
