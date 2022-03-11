@@ -1215,140 +1215,137 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* yagnik start */
 
-#industry_chart{
-    width: 59%;
-    margin: 10% auto;
-    padding: 0;
-}
-
-#industry_chart .apexcharts-graphical{
-    transform: translate(150px, 5px) !important;
-}
-
-#industry_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-right{
-    position: absolute !important;
-    left: 0 !important;
-    top: 50% !important;
-    margin-top: -61px !important;
-    right: auto !important;
-}
-
-#industry_chart .apexcharts-legend-marker {
-    width: 25px !important;
-    height: 15px !important;
-    margin-right: 3px;
-    border-radius: 3px !important;
-    margin-right: 10px;
-}
-
-#industry_chart .apexcharts-legend-text{
-    font-size: 16px !important;
-    font-weight: bolder !important;
-}
-
-.demo_image{
-    width: 11%;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    top: 32.5%;
-    left: 47.5%;
-    border-radius: 50%;
-    border: 2px solid #000;
-}
-
-@media(min-width:280px) and (max-width:767px){
-    #industry_chart{
-        width: 300px;
-    }
-
-    #industry_chart .apexcharts-graphical{
-        transform: translate(0, 0) !important;
-    }
-
-    #industry_chart .apexcharts-svg foreignObject{
-        height: 500px !important;
-    }
-    #industry_chart .apexcharts-svg{
-        height: 500px !important;
-    }
-
-    #industry_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-right{
-        left: 27% !important;
-        top: 80% !important;
-    }
-
-    .demo_image{
-        width: 13%;
-        top: 32.9%;
-        left: 42%;
-    }
-}   
-
-
-@media(min-width:768px) and (max-width:1023px){
- 
-}
-
-@media(min-width:820px) and (max-width:1180px){
-   
-}
-
-
-@media(min-width:1024px) and (max-width:1365px){
- 
-}
-
-
-#sign_chart {
-    width: 100%;
-    height: 700px;
-}
-
-#bill_chart {
-    width: 100%;
-    height: 700px;
-}
 
 
 
-  /* yagnik end */
 
- /*Start By Rahul*/
- #agentFrontendChart{
-    height: 600px;
-    width: 600px;
-    margin: 90px auto;
-}
 
-#agentFrontendChart .apexcharts-legend
-  {
-      right: 75% !important;
+
+
+
+
+
+
+
+
+
+
+
+/*Start By Rahul*/
+
+    /*Start agentFrontendChart*/
+
+
+
+
+
+  #agentFrontendChart{
+      height: 295px;
+      width: 600px;
+      margin: 90px auto;
   }
 
-  #agentFrontendChart .apexcharts-graphical
-  {
-     transform: translate(150px, 0px)!important;
-  }
+  #agentFrontendChart .apexcharts-legend
+    {
+        right: 69% !important;
+        top: 31% !important;
+        width: 191px !important;
+    }
+
+    #agentFrontendChart .apexcharts-legend-text{
+        font-size: 16px !important;
+        font-weight: bolder !important;
+    }
+
+    #agentFrontendChart .apexcharts-graphical
+    {
+       transform: translate(245px, 0px)!important;
+    }
+
+    #agentFrontendChart .apexcharts-legend-marker {
+        width: 25px !important;
+        height: 15px !important;
+        margin-right: 3px;
+        border-radius: 3px !important;
+        margin-right: 10px;
+    }
 
 
 @media(min-width: 280px) and (max-width: 767px)
 {
-  #agentFrontendChart .apexcharts-legend
-  {
-      right: 65% !important;
-  }
+    #agentFrontendChart .apexcharts-legend
+    {
+       display: block !important;
+        right: 33% !important;
+        width: 100% !important;
+        left: 33% !important;
+        top: 70% !important;
+        height: 150px !important;
+    }
 
-  #agentFrontendChart .apexcharts-graphical
-  {
-     transform: translate(120px, 0px)!important;
-  }
+    #agentFrontendChart .apexcharts-legend-marker {
+        width: 25px !important;
+        height: 15px !important;
+        margin-right: 3px;
+        border-radius: 3px !important;
+        margin-right: 10px;
+    }
 
-  #agentFrontendChart {
-   height: 50px;
-    width: 350px;
-    margin-top: 4px auto;
-  }
+    #agentFrontendChart .apexcharts-graphical
+    {
+       transform: translate(29px, 0px)!important;
+
+    }
+
+    #agentFrontendChart .apexcharts-legend-text{
+        font-size: 16px !important;
+        font-weight: bolder !important;
+    }
+
+    #agentFrontendChart {
+      height: 500px !important;
+      width: 350px;
+      margin-top: 5px auto;
+    }
+
 }
+
+@media(min-width: 768px) and (max-width: 1024px)
+{
+    #agentFrontendChart .apexcharts-legend
+    {
+        right: 65% !important;
+    }
+
+}
+
+/*End agentFrontendChart*/
+
+/*Start Meeting Chart*/
+
+@media(min-width: 280px) and (max-width: 767px)
+{
+
+    #meetignChart{
+      height: 295px !important;
+  }
+  #meetignChart .apx-legend-position-right
+  {
+    right: 32% !important;
+    top : 40% !important;
+    height: 251px !important;
+
+  }
+
+
+    #meetignChart .apexcharts-graphical
+    {
+       transform: translate(87px, 0px)!important;
+    }
+
+}
+
+
+/*End Meeting Chart*/
 
 /*End By Rahul

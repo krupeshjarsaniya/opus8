@@ -65,7 +65,36 @@
                                 <input type="email" disabled value="{{ $agent_info->sales_percentage }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sales Percentage">
                             </div>
                         </div>
-                        <div class="remedy-music-player-box-wrapper">
+
+                        {{-- Start by dhaval --}}
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <div class="remedy-input-icon-wrapper">
+                                        <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i>
+                                        <input type="text" disabled value="{{ $agent_info->hour_rate }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hour Rate">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <div class="remedy-input-icon-wrapper">
+                                        <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i>
+                                        <input type="text" class="form-control" disabled value="{{ $agent_info->sector_of_the_deal }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sector Of The Deal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="remedy-input-icon-wrapper">
+                                <i><img src="{{ asset('assets/images/percentage-icon.svg') }}" alt="remedy"></i>
+                                <input type="text" disabled value="{{ $agent_info->agency_of_deal }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Agency Of Deal">
+                            </div>
+                        </div>
+                        {{-- End by dhaval --}}
+
+
+                        {{-- <div class="remedy-music-player-box-wrapper">
                             <div class="remedy-music-player-user-details">
                                 <div class="jAudio">
                                     <audio></audio>
@@ -109,7 +138,7 @@
                                     <div class="jAudio--playlist"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

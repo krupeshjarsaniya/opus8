@@ -21,9 +21,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/* START Add by Dhaval */
-Route::get('/sign-up-bar', [HomeController::class, 'signUpBar'])->name('sign.up.bar');
-/* END Add by Dhaval */
+// /* START Add by Dhaval */
+// Route::get('/sign-up-bar', [HomeController::class, 'signUpBar'])->name('sign.up.bar');
+// /* END Add by Dhaval */
 
 $appRoutes = function () {
 
@@ -46,23 +46,17 @@ Route::group(['prefix' => '/', 'namespace' => ''], $appRoutes);
 Route::get('/signup', [LoginController::class, 'signup'])->name('signup');
 Route::get('/signup-chart', [LoginController::class, 'signupChart'])->name('signup.chart');
 
-
-
 //AGENT BACKEND
-
 Route::get('/agent-backend', [AgentController::class, 'agentBackend'])->name('agent.backend');
 Route::get('/agent-frontend', [AgentController::class, 'agentFrontend'])->name('agent.frontend');
 
 //INDUSTRY
-
 Route::get('/industry', [IndustryController::class, 'industry'])->name('industry');
 Route::get('/industry-chart', [IndustryController::class, 'industryChart'])->name('industry.chart');
 
 // Weekly Billing
-
 Route::get('/bill-form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
 Route::get('/bill-chart', [WeeklyBillingController::class, 'billChart'])->name('bill.chart');
-
 
 //METTING
 Route::get('/meeting-chart', [MeetingController::class, 'meetingChart'])->name('meetign.chart');

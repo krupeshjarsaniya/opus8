@@ -13,7 +13,7 @@ class Agent extends Model
 
     protected $guarded = ["id"];
 
-    protected $fillable = ["email", "first_name", "last_name", "profile_img", "sales_type", "sales_percentage"];
+    protected $fillable = ["email", "first_name", "last_name", "profile_img", "sales_type", "sales_percentage","hour_rate","sector_of_the_deal","agency_of_deal"];
 
     protected $appends = ["profile_pic"];
 
