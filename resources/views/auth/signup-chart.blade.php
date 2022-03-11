@@ -5,6 +5,7 @@
 <section class="remedy-layout-wrapper">
     <div class="container">
         <h1 class="text-center mb-5 font-weight-light">Sign <b> Up</b></h1>
+        <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 25px auto"></div>
         <div id="sign_chart"></div>
         <div>
 </section>

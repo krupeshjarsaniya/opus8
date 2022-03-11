@@ -5,6 +5,7 @@
 <section class="remedy-layout-wrapper">
     <div class="container">
         <h1 class="text-center font-weight-light">Sign <b>Up</b></h1>
+        <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 25px auto"></div>
         <form>
             <div class="row mt-5">
             	<div class="col-lg-4 px-4"><h5>Strategy Deals</h5></div>
@@ -104,3 +105,6 @@
     <div>
 </section>
 @endsection
+@push('js')
+    
+@endpush

@@ -4,8 +4,8 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-      <h1 class="text-center mb-5 font-weight-light"><b>Meetigns</b></h1>
-
+      <h1 class="text-center font-weight-light mb-3"><b>Meetigns</b></h1>
+      <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 0 auto"></div>
       <div id="app"></div>
       <svg width="500" height="350">
          <defs>
@@ -32,11 +32,11 @@
 <script>
 
   $(document).ready(function(){
-        
-        // alert('hii');     
 
-            if ($(window).width() <= 767) 
-            { 
+        // alert('hii');
+
+            if ($(window).width() <= 767)
+            {
                 $('svg').css('width','100%');
                 $('image').attr('clip-path','url(#myCircle)');
                 $('#myCircle').children('circle').attr('cx','113');
@@ -57,9 +57,9 @@
                $('.apexcharts-radialbar-hollow').css('width','800');
                $('.apexcharts-theme-light').css('width','800');
                $('.apexcharts-svg').attr('width','800');
-               $('.apexcharts-svg foreignObject').css('width','800'); 
-            }  
-            
+               $('.apexcharts-svg foreignObject').css('width','800');
+            }
+
         })
 
   var _seed = 42;
@@ -75,12 +75,12 @@
           super(props);
 
           this.state = {
-          
+
             series: [44, 55, 67, 83, 100, 90],
             options: {
 
               chart: {
-                
+
                 height: 350,
                 type: 'radialBar',
               },
@@ -144,7 +144,7 @@
                 colors: ['#e38c01', '#ffd704', '#74cdd6', '#0073af', '#a8d7a9','#4f5050'],
                 stroke: {
                   lineCap: 'round',
-                   
+
                 }
             },
 

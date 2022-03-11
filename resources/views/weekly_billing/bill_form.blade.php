@@ -4,25 +4,23 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center font-weight-light">Weekly <b>Billings</b></h1>
-
-            <div class="row mt-5">
-            	<div class="col-lg-3"><h5>Agent</h5></div>
-            	<div class="col-lg-3"><h5>Weekly Billings</h5></div>
-            	<div class="col-lg-3"><h5>Average Close Out</h5></div>
-            	<div class="col-lg-3"><h5>Action</h5></div>
-            </div>
-
-
-            <div id="agentBilling">
-                {!! $html !!}
-            </div>
-            @if ($show_loadmore)
-            <div class="form-btn-block">
-                <button type="submit" class="remedy-login-btn"><span id="load_more">Load More</span> <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
-            </div>
-            @endif
-    <div>
+        <h1 class="text-center font-weight-light mb-3">Weekly <b>Billings</b></h1>
+        <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 0 auto"></div>
+        <div class="row mt-5">
+        	<div class="col-lg-3"><h5>Agent</h5></div>
+        	<div class="col-lg-3"><h5>Weekly Billings</h5></div>
+        	<div class="col-lg-3"><h5>Average Close Out</h5></div>
+        	<div class="col-lg-3"><h5>Action</h5></div>
+        </div>
+        <div id="agentBilling">
+            {!! $html !!}
+        </div>
+        @if ($show_loadmore)
+        <div class="form-btn-block">
+            <button type="submit" class="remedy-login-btn"><span id="load_more">Load More</span> <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
+        </div>
+        @endif
+    </div>
 </section>
 @endsection
 

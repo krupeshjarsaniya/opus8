@@ -4,7 +4,8 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center font-weight-light">Sign Ups Broken down by <b class="">industry</b></h1>
+        <h1 class="text-center font-weight-light mb-3">Sign Ups Broken down by <b class="">industry</b></h1>
+        <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 0 auto"></div>
         <div class="row mt-5">
             <div class="col-lg-2"><h6>Agent</h6></div>
             <div class="col-lg-10">
