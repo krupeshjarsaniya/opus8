@@ -3096,3 +3096,7 @@ Did you mean this?
 #71 D:\\xampp\\htdocs\\opus8\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #72 {main}
 "} 
+[2022-03-11 06:01:11] local.ERROR: Cannot redeclare App\Models\Agent::Billings() {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare App\\Models\\Agent::Billings() at D:\\xampp\\htdocs\\opus8\\app\\Models\\Agent.php:37)
+[stacktrace]
+#0 {main}
+"} 

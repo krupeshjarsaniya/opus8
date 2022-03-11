@@ -28,4 +28,19 @@ class Agent extends Model
     public function agent_songs() {
         return $this->hasMany(AgentSongs::class, "agent_id", "id");
     }
+
+    public function billings()
+    {
+        return $this->hasOne('App\Models\Billings');
+    }
+
+    public function industry()
+    {
+        return $this->hasOne('App\Models\Industry');
+    }
+
+    public function psls()
+    {
+        return $this->hasOne('App\Models\Psls');
+    }
 }
