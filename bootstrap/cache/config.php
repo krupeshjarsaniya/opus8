@@ -4,7 +4,7 @@
     'name' => 'Laravel',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'http://localhost/opus8/public',
     'timezone' => 'UTC',
     'locale' => 'en',
     'fallback_locale' => 'en',
@@ -360,7 +360,7 @@
       array (
         'driver' => 'local',
         'root' => 'D:\\xampp\\htdocs\\opus8\\storage\\app/public',
-        'url' => 'http://localhost/storage',
+        'url' => 'http://localhost/opus8/public/storage',
         'visibility' => 'public',
       ),
       's3' => 
@@ -602,8 +602,8 @@
     ),
     'URL' => 
     array (
-      'songs' => 'http://localhost/storage/songs',
-      'profiles_pic' => 'http://localhost/storage/profiles_pic',
+      'songs' => 'http://localhost/opus8/public/storage/songs',
+      'profiles_pic' => 'http://localhost/opus8/public/storage/profiles_pic',
     ),
   ),
   'sanctum' => 

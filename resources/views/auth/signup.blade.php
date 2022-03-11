@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="row border-top border-gray">
                 <div class="col-lg-4 px-3  mt-2">
                     <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="row border-top border-gray">
                 <div class="col-lg-4 px-3  mt-2">
                     <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="form-btn-block">
                 <button type="submit" class="remedy-login-btn">Sign up <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
             </div>

@@ -43,8 +43,9 @@ $appRoutes = function () {
 Route::group(['prefix' => '/', 'namespace' => ''], $appRoutes);
 
 // SIGNUP
-Route::get('/signup', [LoginController::class, 'signup'])->name('signup');
+Route::get('/sign-up', [LoginController::class, 'signup'])->name('signup');
 Route::get('/signup-chart', [LoginController::class, 'signupChart'])->name('signup.chart');
+Route::post('/agent-loadmore-signup', [LoginController::class, 'signupChart'])->name('signup.chart.loadmore');
 
 //AGENT BACKEND
 Route::get('/agent-backend', [AgentController::class, 'agentBackend'])->name('agent.backend');
@@ -52,7 +53,7 @@ Route::get('/agent-frontend', [AgentController::class, 'agentFrontend'])->name('
 
 //INDUSTRY
 Route::get('/industry', [IndustryController::class, 'industry'])->name('industry');
-Route::get('/industry-chart', [IndustryController::class, 'industryChart'])->name('industry.chart');
+Route::get('/industry-chart/{id}', [IndustryController::class, 'industryChart'])->name('industry.chart');
 Route::post('/agent-loadmore-industry', [IndustryController::class, 'load_agents_industry'])->name('industry.chart.billing');
 Route::post('/agent-submit-industry', [IndustryController::class, 'submit_agents_industry'])->name('industry.chart.submit');
 
