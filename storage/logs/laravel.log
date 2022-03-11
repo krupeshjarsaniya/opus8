@@ -2787,3 +2787,7 @@ Did you mean this?
 #9 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #10 {main}
 "} 
+[2022-03-11 06:01:11] local.ERROR: Cannot redeclare App\Models\Agent::Billings() {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare App\\Models\\Agent::Billings() at D:\\xampp\\htdocs\\opus8\\app\\Models\\Agent.php:37)
+[stacktrace]
+#0 {main}
+"} 
