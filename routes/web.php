@@ -22,10 +22,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// /* START Add by Dhaval */
-// Route::get('/sign-up-bar', [HomeController::class, 'signUpBar'])->name('sign.up.bar');
-// /* END Add by Dhaval */
-
 $appRoutes = function () {
 
     Auth::routes();
