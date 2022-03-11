@@ -4,7 +4,8 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center font-weight-light">PSL<b>s</b></h1>
+        <h1 class="text-center font-weight-light mb-3">PSL<b>s</b></h1>
+        <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 0 auto"></div>
             <div class="row mt-5">
                 <div class="col-lg-2"><h5>Agent</h5></div>
                 <div class="col-lg-10">
@@ -21,8 +22,8 @@
                 {{-- @dump($agent->psls->new_on_board) --}}
                 <div class="row border-top border-gray mt-5">
                     <div class="col-lg-2 mt-2">
-                        <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
-                        <label><h5 class="pl-3"><a href="{{route('agent.chart',$agent)}}">{{$agent->first_name}}</a></h5></label>
+                        <img src="{{ asset('assets/images/demo.jpg') }}" alt="remedy"  style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%;">
+                        <label><h5 class="pl-2"><a href="{{route('agent.chart',$agent)}}">{{$agent->first_name}}</a></h5></label>
                     </div>
 
                     <div class="col-lg-10 mt-2">
@@ -56,7 +57,7 @@
 
             {{-- <div class="row border-top border-gray mt-4">
                 <div class="col-lg-2 mt-2">
-                     <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
+                     <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-3 rounded-circle p-0">
                     <label><h5 class="pl-3">Ben</h5></label>
                 </div>
                 <div class="col-lg-10 mt-2">
@@ -91,5 +92,5 @@
 @endsection
 
 @push('js')
-    @include('psls.Js.psls-js')
+    @include('psls.js.psls-js')
 @endpush
