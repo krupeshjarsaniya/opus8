@@ -67,22 +67,23 @@
                 <div class="col-6">
                     <div class="form-group">
                         <div class="remedy-input-icon-wrapper">
-                            <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i>
-                            <input type="text" class="form-control" id="sector_of_the_deal" value="{{old('sector_of_the_deal', $agent_info->sector_of_the_deal ?? '')}}" name="sector_of_the_deal" placeholder="Sector Of The Deal">
+                            {{-- <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i> --}}
+                            {{-- <input type="text" class="form-control" id="sector_of_the_deal" value="{{old('sector_of_the_deal', $agent_info->sector_of_the_deal ?? '')}}" name="sector_of_the_deal" placeholder="Sector Of The Deal"> --}}
                             {{-- <select class="form-control" id="sector_of_the_deal" name="sector_of_the_deal" placeholder="Sector Of The Deal">
                                 <option value="IT">IT</option>
                                 <option value="Industry">Industry</option>
                                 <option value="School">School</option>
                                 <option value="College">College</option>
                             </select> --}}
+
+                            <select class="form-select form-control" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
 
-                        {{-- <select class="form-select" aria-label="Default select example">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select> --}}
                     </div>
                 </div>
             </div>
