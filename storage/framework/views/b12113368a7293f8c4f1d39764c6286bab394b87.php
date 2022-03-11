@@ -1,14 +1,14 @@
-@csrf
+<?php echo csrf_field(); ?>
 <div class="row">
     <div class="col-md-4">
         <div class="remedy-agent-preview-block">
             <div class="remedy-agent-preview-img">
                 <input type="file" accept="image/*" name="profile_pic" id="profile_pic" class="profile_pic">
-                <img src="{{ $agent_info->profile_pic ?? asset('assets/images/profile_small.svg') }}" class="profile_pic_prev" alt="{{ $agent_info->first_name ?? '' }}">
+                <img src="<?php echo e($agent_info->profile_pic ?? asset('assets/images/profile_small.svg')); ?>" class="profile_pic_prev" alt="<?php echo e($agent_info->first_name ?? ''); ?>">
                 <a href="javascript:void(0);" class="profile_pic_handler">Click to upload</a>
             </div>
 			 <div class="remedy-return-back-arrow">
-				<a href="{{ url('/agent') }}"><img src="{{ asset('assets/images/left-back-arrow-icon.svg') }}" alt="remedy">return to the agent list</a>
+				<a href="<?php echo e(url('/agent')); ?>"><img src="<?php echo e(asset('assets/images/left-back-arrow-icon.svg')); ?>" alt="remedy">return to the agent list</a>
 			</div>
         </div>
     </div>
@@ -16,32 +16,32 @@
         <div>
             <div class="form-group">
                 <div class="remedy-input-icon-wrapper">
-                    <i><img src="{{ asset('assets/images/mail-icon.svg') }}" alt="remedy"></i>
-                    <input type="email" class="form-control" id="email" value="{{old('email', $agent_info->email ?? '')}}" name="email" placeholder="Your email">
+                    <i><img src="<?php echo e(asset('assets/images/mail-icon.svg')); ?>" alt="remedy"></i>
+                    <input type="email" class="form-control" id="email" value="<?php echo e(old('email', $agent_info->email ?? '')); ?>" name="email" placeholder="Your email">
                 </div>
             </div>
             <div class="row">
                 <div class="col-6">
                     <div class="form-group">
                         <div class="remedy-input-icon-wrapper">
-                            <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i>
-                            <input type="text" class="form-control" id="first_name" value="{{old('first_name', $agent_info->first_name ?? '')}}" name="first_name" placeholder="Your first name">
+                            <i><img src="<?php echo e(asset('assets/images/user-icon.svg')); ?>" alt="remedy"></i>
+                            <input type="text" class="form-control" id="first_name" value="<?php echo e(old('first_name', $agent_info->first_name ?? '')); ?>" name="first_name" placeholder="Your first name">
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="form-group">
                         <div class="remedy-input-icon-wrapper">
-                            <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i>
-                            <input type="text" class="form-control" id="last_name" value="{{old('last_name', $agent_info->last_name ?? '')}}" name="last_name" placeholder="Your last name">
+                            <i><img src="<?php echo e(asset('assets/images/user-icon.svg')); ?>" alt="remedy"></i>
+                            <input type="text" class="form-control" id="last_name" value="<?php echo e(old('last_name', $agent_info->last_name ?? '')); ?>" name="last_name" placeholder="Your last name">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="remedy-input-icon-wrapper">
-                    <i><img src="{{ asset('assets/images/shop-icon.svg') }}" alt="remedy"></i>
-                    <input type="text" class="form-control" id="sales_type" value="{{old('sales_type', $agent_info->sales_type ?? '')}}" name="sales_type" placeholder="Sales Type">
+                    <i><img src="<?php echo e(asset('assets/images/shop-icon.svg')); ?>" alt="remedy"></i>
+                    <input type="text" class="form-control" id="sales_type" value="<?php echo e(old('sales_type', $agent_info->sales_type ?? '')); ?>" name="sales_type" placeholder="Sales Type">
                     <div class="col-md-12 eng-error-block">
                         <small class="text-danger engineer_error"></small>
                     </div>
@@ -49,38 +49,33 @@
             </div>
             <div class="form-group">
                 <div class="remedy-input-icon-wrapper">
-                    <i><img src="{{ asset('assets/images/percentage-icon.svg') }}" alt="remedy"></i>
-                    <input type="number" class="form-control" id="sales_percentage" value="{{old('sales_percentage', $agent_info->sales_percentage ?? '')}}" name="sales_percentage" placeholder="Sales Percentage">
+                    <i><img src="<?php echo e(asset('assets/images/percentage-icon.svg')); ?>" alt="remedy"></i>
+                    <input type="number" class="form-control" id="sales_percentage" value="<?php echo e(old('sales_percentage', $agent_info->sales_percentage ?? '')); ?>" name="sales_percentage" placeholder="Sales Percentage">
                 </div>
             </div>
 
-             {{-- Start by dhaval --}}
+             
              <div class="row">
                 <div class="col-6">
                     <div class="form-group">
                         <div class="remedy-input-icon-wrapper">
-                            <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i>
-                            <input type="text" class="form-control" id="hour_rate" value="{{old('hour_rate', $agent_info->hour_rate ?? '')}}" name="hour_rate" placeholder="Hour Rate">
+                            <i><img src="<?php echo e(asset('assets/images/user-icon.svg')); ?>" alt="remedy"></i>
+                            <input type="text" class="form-control" id="hour_rate" value="<?php echo e(old('hour_rate', $agent_info->hour_rate ?? '')); ?>" name="hour_rate" placeholder="Hour Rate">
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="form-group">
                         <div class="remedy-input-icon-wrapper">
-                            {{-- <i><img src="{{ asset('assets/images/user-icon.svg') }}" alt="remedy"></i> --}}
-                            {{-- <input type="text" class="form-control" id="sector_of_the_deal" value="{{old('sector_of_the_deal', $agent_info->sector_of_the_deal ?? '')}}" name="sector_of_the_deal" placeholder="Sector Of The Deal"> --}}
-                            {{-- <select class="form-control" id="sector_of_the_deal" name="sector_of_the_deal" placeholder="Sector Of The Deal">
-                                <option value="IT">IT</option>
-                                <option value="Industry">Industry</option>
-                                <option value="School">School</option>
-                                <option value="College">College</option>
-                            </select> --}}
+                            
+                            
+                            
 
                             <select class="form-select form-control" name="sector_of_the_deal" aria-label="Default select example">
                                 <option selected>Open this select menu</option>
-                                <option value="1" @if($agent_info->sector_of_the_deal == 1) selected @endif>It</option>
-                                <option value="2" @if($agent_info->sector_of_the_deal == 2) selected @endif>Medical</option>
-                                <option value="3" @if($agent_info->sector_of_the_deal == 3) selected @endif>Bissuness</option>
+                                <option value="1" <?php if($agent_info->sector_of_the_deal == 1): ?> selected <?php endif; ?>>It</option>
+                                <option value="2" <?php if($agent_info->sector_of_the_deal == 2): ?> selected <?php endif; ?>>Medical</option>
+                                <option value="3" <?php if($agent_info->sector_of_the_deal == 3): ?> selected <?php endif; ?>>Bissuness</option>
                             </select>
                         </div>
 
@@ -90,40 +85,19 @@
 
             <div class="form-group">
                 <div class="remedy-input-icon-wrapper">
-                    <i><img src="{{ asset('assets/images/percentage-icon.svg') }}" alt="remedy"></i>
-                    <input type="text" class="form-control" id="agency_of_deal" value="{{old('agency_of_deal', $agent_info->agency_of_deal ?? '')}}" name="agency_of_deal" placeholder="Agency Of Deal">
+                    <i><img src="<?php echo e(asset('assets/images/percentage-icon.svg')); ?>" alt="remedy"></i>
+                    <input type="text" class="form-control" id="agency_of_deal" value="<?php echo e(old('agency_of_deal', $agent_info->agency_of_deal ?? '')); ?>" name="agency_of_deal" placeholder="Agency Of Deal">
                 </div>
             </div>
-            {{-- End by dhaval --}}
+            
 
-            {{-- @if (isset($agent_info) && !empty($agent_info->agent_songs) && count($agent_info->agent_songs) >= 1)
-            <div class="row">
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Title</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($agent_info->agent_songs as $songs)
-                        <tr>
-                            <td>{{ $loop->iteration }}</td>
-                            <td>{{ $songs->song_name }}</td>
-                            <td><a href="javascript:void(0);" class="delete-song" data-id="{{ $songs->id }}"><i class="fa fa-trash"></i></a></td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-            @endif --}}
+            
             <div class="form-group">
                 <div class="hd-file-upload hd-form-bg-section d-none" id="song_upload_wrapper">
                     <label id="song_file-error" class="error d-none" for="song_file">This field is required</label>
                     <div class="hd-file-data">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="{{ asset('assets/images/upload.svg')}}" alt="" />
+                            <img src="<?php echo e(asset('assets/images/upload.svg')); ?>" alt="" />
                             <div class="hd-file-border mb-0">
                                 <!-- <span class="lbl-text">Drag files here or <b>browse</b> (up to 20 files)</span> -->
                                 <span class="lbl-text">Drag files here or <b>browse</b></span>
@@ -134,24 +108,24 @@
                 </div>
             </div>
 
-            @if (isset($agent_info) && $agent_info->id)
-                {{-- <p>If you upload song than it will remove old song and upload new one.</p> --}}
-            @endif
+            <?php if(isset($agent_info) && $agent_info->id): ?>
+                
+            <?php endif; ?>
             <div class="row beat-file-names">
                 <div class="col-md-12">
                     <div class="uploaded_file_list"></div>
                 </div>
             </div>
             <div class="form-btn-block">
-                <button type="submit" class="remedy-login-btn">{{isset($agent_info->id) && $agent_info->id != "" ? 'Update' : 'Add Agent'}} <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
+                <button type="submit" class="remedy-login-btn"><?php echo e(isset($agent_info->id) && $agent_info->id != "" ? 'Update' : 'Add Agent'); ?> <i><img src="<?php echo e(asset('assets/images/back-arrow-icon.svg')); ?>" alt="remedy"></i></button>
             </div>
         </div>
     </div>
 </div>
 
-@push('scripts')
+<?php $__env->startPush('scripts'); ?>
 <script>
-    var agent_id = "{{$agent_info->id ?? '' }}";
+    var agent_id = "<?php echo e($agent_info->id ?? ''); ?>";
     var song_files_titles = [];
     Dropzone.autoDiscover = false;
     var myDropzone = new Dropzone(".dropzone", {
@@ -246,7 +220,7 @@
                             btnClass: 'btn-red',
                             action: function() {
                                 var csrf_token = $('meta[name="csrf-token"]').attr("content");
-                                let url = '{{ $module_route }}/' + agent_id + '/songs/' + id;
+                                let url = '<?php echo e($module_route); ?>/' + agent_id + '/songs/' + id;
                                 $.ajax({
                                     url: url,
                                     method: "DELETE",
@@ -285,14 +259,14 @@
                     if ($(".profile_pic_prev").length >= 1) {
                         $(".profile_pic_prev").attr('src', e.target.result);
                     } else {
-                        $('.profile_pic_prev').html('<img src="' + e.target.result + '" onerror="this.src={{ asset("assets/images/profile_small.svg") }}" id="image_preview" height="100%" width="100%">');
+                        $('.profile_pic_prev').html('<img src="' + e.target.result + '" onerror="this.src=<?php echo e(asset("assets/images/profile_small.svg")); ?>" id="image_preview" height="100%" width="100%">');
                     }
                 };
                 reader.readAsDataURL(this.files[0]);
             }
         });
 
-        var isRequiredProfile = "{{ !empty($agent_info->profile_pic) }}"
+        var isRequiredProfile = "<?php echo e(!empty($agent_info->profile_pic)); ?>"
 
         $(".remedy-login-btn").on("click", function() {
             //if (myDropzone.files && myDropzone.files.length || agent_id) {
@@ -370,7 +344,7 @@
                                     },
                                     success: function(response, textStatus, jqXHR) {
                                         if (jqXHR.status == 200 || jqXHR.status == 204) {
-                                            window.location = "{{ url('/agent') }}";
+                                            window.location = "<?php echo e(url('/agent')); ?>";
                                         } else {}
                                     },
                                     error: function(error) {
@@ -406,4 +380,5 @@
         });
     });
 </script>
-@endpush
+<?php $__env->stopPush(); ?>
+<?php /**PATH D:\xampp\htdocs\opus8\resources\views/agent-form.blade.php ENDPATH**/ ?>
