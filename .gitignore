@@ -18,3 +18,4 @@ storage/*.key
 Homestead.yaml
 Homestead.json
 *.log
+*.log
