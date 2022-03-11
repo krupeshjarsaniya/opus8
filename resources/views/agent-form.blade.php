@@ -76,11 +76,11 @@
                                 <option value="College">College</option>
                             </select> --}}
 
-                            <select class="form-select form-control" aria-label="Default select example">
+                            <select class="form-select form-control" name="sector_of_the_deal" aria-label="Default select example">
                                 <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1" @if($agent_info->sector_of_the_deal == 1) selected @endif>It</option>
+                                <option value="2" @if($agent_info->sector_of_the_deal == 2) selected @endif>Medical</option>
+                                <option value="3" @if($agent_info->sector_of_the_deal == 3) selected @endif>Bissuness</option>
                             </select>
                         </div>
 

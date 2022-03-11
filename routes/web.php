@@ -57,10 +57,14 @@ Route::prefix('/psls')->group(function () {
 //INDUSTRY
 Route::get('/industry', [IndustryController::class, 'industry'])->name('industry');
 Route::get('/industry-chart', [IndustryController::class, 'industryChart'])->name('industry.chart');
+Route::post('/agent-loadmore-industry', [IndustryController::class, 'load_agents_industry'])->name('industry.chart.billing');
+Route::post('/agent-submit-industry', [IndustryController::class, 'submit_agents_industry'])->name('industry.chart.submit');
 
 // Weekly Billing
 Route::get('/bill-form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
 Route::get('/bill-chart', [WeeklyBillingController::class, 'billChart'])->name('bill.chart');
+Route::post('/agent-loadmore-biling', [WeeklyBillingController::class, 'load_agents_billing'])->name('bill.chart.billing');
+Route::post('/agent-submit-billing', [WeeklyBillingController::class, 'submit_agents_billing'])->name('bill.chart.submit');
 
 //METTING
 Route::get('/meeting-chart', [MeetingController::class, 'meetingChart'])->name('meetign.chart');

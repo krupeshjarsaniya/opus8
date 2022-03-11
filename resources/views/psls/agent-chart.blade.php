@@ -25,12 +25,13 @@
 
             if ($(window).width() <= 767)
             {
-             $('.apexcharts-theme-light').css('height','500');
-             $('.apexcharts-svg').attr('height','500');
-             $('.apexcharts-svg foreignObject').css('height','500');
+               $('.apexcharts-theme-light').css('height','500');
+               $('.apexcharts-svg').attr('height','500');
+               $('.apexcharts-svg foreignObject').css('height','500');
             }
             else
             {
+               
                $('.apexcharts-graphical').attr('transform','translate(150, 0)');
                $('.apexcharts-theme-light').css('width','800');
                $('.apexcharts-svg').attr('width','800');

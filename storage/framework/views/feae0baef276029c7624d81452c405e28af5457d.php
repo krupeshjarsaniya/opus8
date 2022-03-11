@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('title', 'Sales Dashboard'); ?>
 <?php $__env->startSection('content'); ?>
 <meta http-equiv="refresh" content="30">

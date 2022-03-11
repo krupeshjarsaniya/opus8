@@ -167,20 +167,6 @@ img {
     }
 }
 
-.remedy-layout-wrapper::before {
-    position: absolute;
-    content: "";
-    background: url(/images/remedy-umbrella-bg-image.png?4c9bf4196c83975faddf73ce557d016a) no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    width: 100%;
-    height: 610px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
 .remedy-agent-preview-block {
     display: flex;
     flex-direction: column;
@@ -957,6 +943,30 @@ form {
 .remedy-login-btn:hover {
     opacity: 0.7;
 }
+.remedy-billing-btn {
+    max-width: 200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 15px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, #ff7e00 0%, #ffc500 100%);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.remedy-billing-btn:hover {
+    opacity: 0.7;
+}
 
 .remedy-login-btn i {
     display: flex;
@@ -1217,9 +1227,113 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 
+#industry_chart{
+    width: 59%;
+    margin: 10% auto;
+    padding: 0;
+}
+
+#industry_chart .apexcharts-graphical{
+    transform: translate(150px, 5px) !important;
+}
+#industry_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-right{
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    margin-top: -61px !important;
+    right: auto !important;
+}
+#industry_chart .apexcharts-legend-marker {
+    width: 25px !important;
+    height: 15px !important;
+    border-radius: 2px !important;
+    margin-right: 10px !important;
+    margin-right: 3px;
+    border-radius: 3px !important;
+    margin-right: 10px;
+}
 
 
+#industry_chart .apexcharts-legend-text{
+    font-size: 16px !important;
+    font-weight: bolder !important;
+}
 
+
+.chart_image{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2% 0 0 1.5%;
+}
+
+.chart_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+@media(min-width:280px) and (max-width:767px){
+    #industry_chart{
+        width: 300px;
+    }
+
+    #industry_chart .apexcharts-graphical{
+        transform: translate(0, 0) !important;
+    }
+
+    #industry_chart .apexcharts-svg foreignObject{
+        height: 500px !important;
+    }
+    #industry_chart .apexcharts-svg{
+        height: 500px !important;
+    }
+
+    #industry_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-right{
+        left: 27% !important;
+        top: 80% !important;
+    }
+
+    .chart_image{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+}   
+
+
+@media(min-width:768px) and (max-width:1023px){
+    #industry_chart{
+        width: 80%;
+    }
+
+    .chart_image{
+        margin: 2% 0 0 3%;
+    }
+
+    #industry_chart .apexcharts-legend.apexcharts-align-center.apx-legend-position-right {
+        top: 54% !important;
+    }
+}
+
+
+#sign_chart {
+    width: 100%;
+    height: 700px;
+  }
+
+
+#bill_chart {
+    width: 100%;
+    height: 600px;
+  }
+/* yagnik end */
 
 
 
@@ -1323,25 +1437,59 @@ input[type="range"]::-webkit-slider-thumb {
 
 /*Start Meeting Chart*/
 
+
+#meetignChart .apexcharts-legend-series
+{
+    margin: 8px 5px !important;
+}
+
+#meetignChart
+{
+    height: 118px !important;
+}
+
+
+
+#meetignChart .apx-legend-position-right
+  {
+    right: 0% !important;
+    /*top : 60% !important;*/
+    /*height: 251px !important;*/
+  }
+
 @media(min-width: 280px) and (max-width: 767px)
 {
 
-    #meetignChart{
-      height: 295px !important;
+  #meetignChart{
+      height: 350px !important;
   }
   #meetignChart .apx-legend-position-right
   {
     right: 32% !important;
-    top : 40% !important;
+    top : 60% !important;
     height: 251px !important;
-
   }
+    #meetignChart .apexcharts-legend-series
+    {
+        margin: 2px 5px !important;
+    }
 
 
     #meetignChart .apexcharts-graphical
     {
        transform: translate(87px, 0px)!important;
     }
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px)
+{
+    #meetignChart .apx-legend-position-right
+      {
+        right: 26% !important;
+       
+
+      }
 
 }
 
