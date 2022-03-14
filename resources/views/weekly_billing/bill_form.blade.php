@@ -34,6 +34,10 @@
 @push('scripts')
 <script>
     $(document).ready(function() {
+
+        // Placeholder Remove
+        placeholder();
+
         let page = 1;
         $(".remedy-login-btn").on("click", function() {
             page++;
@@ -79,6 +83,15 @@
             });
         })
     });
+
+    function placeholder()
+    {
+        var mql = window.matchMedia("screen and (min-width: 1024px)");
+        if (mql.matches)
+        { // if media query matches
+            $('.form-control').removeAttr('placeholder');
+        }
+    }
 
     function SubmitBillings(ele)
     {
