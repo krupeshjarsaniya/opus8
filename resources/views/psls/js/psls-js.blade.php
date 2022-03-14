@@ -10,6 +10,16 @@
     });
 
     /* Store Agent Psls Data */
+
+    $(document).ready(function() {
+        var mql = window.matchMedia("screen and (min-width: 1024px)");
+        if (mql.matches)
+        { // if media query matches
+            $('.form-control').removeAttr('placeholder');
+        }
+    });
+
+
     function pslsSubmit(ele)
     {
         var formId = $(ele).data('id');

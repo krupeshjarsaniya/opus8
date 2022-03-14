@@ -18,7 +18,7 @@
         </div>
 
         @foreach ($agents as $agent)
-            <div class="row border-top border-gray">
+            <div class="row border-top border-gray mt-2">
                 <div class="col-lg-2 col-sm-12  mt-3">
                     <div class="row">
                         <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-3 col-12 px-5 px-lg-0 rounded-circle p-0 psls_image">
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="col-lg-10 mt-2">
-                    <form action="#" onsubmit="return false" method="post" name="Form_Name_{{ $agent->first_name }}_{{ $agent->id }}"  id="Form_Name_{{ $agent->first_name }}_{{ $agent->id }}">
+                    <form action="#" onsubmit="return false" method="post" name="Form_Name{{ $agent->first_name }}{{ $agent->id }}"  id="Form_Name{{ $agent->first_name }}{{ $agent->id }}">
                         <input type="hidden" value="{{$agent->id}}" name="agentId">
                         <div class="row">
                             <div class="col-lg-3 mt-4 mt-lg-0">
@@ -47,7 +47,7 @@
                             </div>
                             <div class="col-lg-3 mt-4 mt-lg-0">
                                 {{-- <a href="#" data-id="Form_Name_{{ $agent->first_name }}" onclick="SubmitBillings(this)" class="remedy-login-btn">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></a> --}}
-                                <button type="button" class="remedy-login-btn" data-id="Form_Name_{{ $agent->first_name }}_{{ $agent->id }}" onclick="pslsSubmit(this)">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
+                                <button type="button" class="remedy-login-btn mb-lg-0 mb-3" data-id="Form_Name{{ $agent->first_name }}{{ $agent->id }}" onclick="pslsSubmit(this)">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
                             </div>
                         </div>
                     </form>
@@ -57,7 +57,7 @@
 
         {{-- @if ($show_loadmore)
         <div class="form-btn-block">
-            <button type="submit" class="remedy-login-btn"><span id="load_more">Load More</span> <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
+            <button type="submit" class="remedy-login-btn "><span id="load_more">Load More</span> <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
         </div>
         @endif --}}
     <div>
