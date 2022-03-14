@@ -26,8 +26,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-10 col-sm-12  my-3">
-                    <form action="#" onsubmit="return false" method="post" name="Form_Name_{{ $agent->first_name }}"  id="Form_Name_{{ $agent->first_name }}">
+                <div class="col-lg-10 mt-2">
+                    <form action="#" onsubmit="return false" method="post" name="Form_Name_{{ $agent->first_name }}_{{ $agent->id }}"  id="Form_Name_{{ $agent->first_name }}_{{ $agent->id }}">
                         <input type="hidden" value="{{$agent->id}}" name="agentId">
                         <div class="row">
                             <div class="col-lg-3 mt-4 mt-lg-0">
@@ -47,7 +47,7 @@
                             </div>
                             <div class="col-lg-3 mt-4 mt-lg-0">
                                 {{-- <a href="#" data-id="Form_Name_{{ $agent->first_name }}" onclick="SubmitBillings(this)" class="remedy-login-btn">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></a> --}}
-                                <button type="button" class="remedy-login-btn" data-id="Form_Name_{{ $agent->first_name }}" onclick="pslsSubmit(this)">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
+                                <button type="button" class="remedy-login-btn" data-id="Form_Name_{{ $agent->first_name }}_{{ $agent->id }}" onclick="pslsSubmit(this)">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
                             </div>
                         </div>
                     </form>
