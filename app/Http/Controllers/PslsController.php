@@ -35,7 +35,7 @@ class PslsController extends Controller
         //     exit();
         // }
 
-        $pslscheck = Psls::find($request->agentId);
+        $pslscheck = Psls::where('agent_id',$request->agentId)->first();
         $psls = array(
             'agent_id' => $request->agentId,
             'new_on_board' => $request->new_on_board,

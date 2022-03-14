@@ -3,11 +3,15 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Agent;
+use App\Models\Signup;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+
 class LoginController extends Controller
 {
     /*
@@ -51,7 +55,7 @@ class LoginController extends Controller
 		// $authUser->update(array('last_login_date' => now()));
 		return redirect('/agent');
 	}
-	
+
 	public function logout(Request $request)
     {
         $this->guard()->logout();
@@ -66,7 +70,7 @@ class LoginController extends Controller
 
         return redirect('/');
 	}
-	
+
 	protected function guard()
     {
         return Auth::guard('web');
@@ -74,7 +78,50 @@ class LoginController extends Controller
 
     public function signup()
     {
-        return view('auth.signup');
+        $agents = Agent::where('id', '!=', 0)->with('signup')->get();
+        return view('auth.signup',compact('agents'));
+    }
+
+    public function signupStore(Request $request)
+    {
+        // dd($request->all());
+        // $validator = Validator::make($request->all(), [
+        //     'average_close_out' => 'required',
+        //     'agent' => 'required',
+        // ],
+        // [
+        //     'average_close_out.required'=> "Average close out required",
+        //     'agent.required'=> "Agent required",
+        // ]);
+
+        // if ($validator->fails())
+        // {
+        //     $error=json_decode($validator->errors());
+        //     return response()->json(['status' => 401,'error1' => $error]);
+        //     exit();
+        // }
+
+        $signupCheck = Signup::where('agent_id',$request->agentId)->first();
+        if (!empty($signupCheck)) {
+            $signupArray = array(
+                'average_close_out' => $request->average_close_out,
+                'agent' => $request->agent,
+            );
+
+            Signup::where('agent_id', $request->agentId)->update($signupArray);
+        } else {
+
+            $signupArray = array(
+                'agent_id' => $request->agentId,
+                'average_close_out' => $request->average_close_out,
+                'agent' => $request->agent,
+            );
+            Signup::create($signupArray);
+        }
+
+        $redirect = route('signup');
+        $data = ['title' => "signup", 'message' => "signup create successfully", 'type' => 'success'];
+        return response()->json(['status' => 1,'data' => $data, 'redirect' => $redirect]);
     }
 
     public function signupChart()
