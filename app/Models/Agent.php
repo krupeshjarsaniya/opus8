@@ -44,4 +44,9 @@ class Agent extends Model
     {
         return $this->hasOne('App\Models\Psls');
     }
+
+    public function signup()
+    {
+        return $this->hasOne('App\Models\Signup');
+    }
 }
