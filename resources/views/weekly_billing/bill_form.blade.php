@@ -10,7 +10,7 @@
         	<div class="col-lg-3"><h5>Agent</h5></div>
         	<div class="col-lg-3"><h5>Weekly Billings</h5></div>
         	<div class="col-lg-3"><h5>Average Close Out</h5></div>
-        	<div class="col-lg-3"><h5>Action</h5></div>
+        	<div class="col-lg-3 text-center"><h5>Action</h5></div>
         </div>
         <div id="agentBilling">
             {!! $html !!}

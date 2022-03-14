@@ -26,7 +26,7 @@
                             <div class="col-lg-3"><h6>Finance</h6></div>
                         </div>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-1 px-0">
                         <div class="row m-0">
                             <div class="col-lg-3"><h6>Action</h6></div>
                         </div>

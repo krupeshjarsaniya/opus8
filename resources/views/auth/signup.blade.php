@@ -15,85 +15,85 @@
 
             <div class="row mt-3 border-top border-gray">
                 <div class="col-lg-4 px-3  mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
+                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%;">
                     <label><h5 class="pl-3">Ben</h5></label>
                 </div>
             	<div class="col-lg-4 px-3 bg-2 form-group mt-2">
             		<div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control " name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control " name="" value="" placeholder="">
                     </div>
             	</div>
             	<div class="col-lg-4 px-3 bg-2 form-group mt-2">
                     <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control " name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control " name="" value="" placeholder="">
                     </div>
                 </div>
             </div>
 
             <div class="row border-top border-gray">
                 <div class="col-lg-4 px-3  mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
+                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%;">
                     <label><h5 class="pl-3">Ben</h5></label>
                 </div>
                 <div class="col-lg-4 px-3 bg-2 form-group mt-2">
                     <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control" name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control" name="" value="" placeholder="">
                     </div>
                 </div>
                 <div class="col-lg-4 px-3 bg-2 form-group mt-2">
                     <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control" name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control" name="" value="" placeholder="">
                     </div>
                 </div>
             </div>
 
             <div class="row border-top border-gray">
                 <div class="col-lg-4 px-3  mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
+                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%;">
                     <label><h5 class="pl-3">Ben</h5></label>
                 </div>
                 <div class="col-lg-4 px-3 bg-2 form-group mt-2">
                     <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control" name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control" name="" value="" placeholder="">
                     </div>
                 </div>
                 <div class="col-lg-4 px-3 bg-2 form-group mt-2">
                     <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control" name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control" name="" value="" placeholder="">
                     </div>
                 </div>
             </div>
             
             <div class="row border-top border-gray">
                 <div class="col-lg-4 px-3  mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
+                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%;">
                     <label><h5 class="pl-3">Ben</h5></label>
                 </div>
                 <div class="col-lg-4 px-3 bg-2 form-group mt-2">
                     <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control" name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control" name="" value="" placeholder="">
                     </div>
                 </div>
                 <div class="col-lg-4 px-3 bg-2 form-group mt-2">
                     <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control" name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control" name="" value="" placeholder="">
                     </div>
                 </div>
             </div>
             
             <div class="row border-top border-gray">
                 <div class="col-lg-4 px-3  mt-2">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 rounded-circle p-0">
+                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%;">
                     <label><h5 class="pl-3">Ben</h5></label>
                 </div>
                 <div class="col-lg-4 px-3 bg-2 form-group mt-2">
                     <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control" name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control" name="" value="" placeholder="">
                     </div>
                 </div>
                 <div class="col-lg-4 px-3 bg-2 form-group mt-2">
                     <div class="remedy-input-icon-wrapper">
-                        <input type="text" class=" form-control" name="" value="" autocomplete="" autofocus placeholder="">
+                        <input type="text" class=" form-control" name="" value="" placeholder="">
                     </div>
                 </div>
             </div>
