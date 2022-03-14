@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="row border-top border-gray">
                 <div class="col-lg-4 px-3  mt-2">
                     <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%;">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="row border-top border-gray">
                 <div class="col-lg-4 px-3  mt-2">
                     <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%;">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="form-btn-block">
                 <button type="submit" class="remedy-login-btn">Sign up <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
             </div>
@@ -106,5 +106,5 @@
 </section>
 @endsection
 @push('js')
-    
+
 @endpush

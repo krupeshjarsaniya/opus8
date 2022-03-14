@@ -3,8 +3,8 @@
     <form action="#" class="row" onsubmit="return false" method="post" name="Form_Name_{{ $value->first_name }}_{{ $value->id }}"  id="Form_Name_{{ $value->first_name }}_{{ $value->id }}">
         <input type="hidden" name="agent_id" value="{{ $value->id }}">
     <div class="col-lg-2 mt-2">
-        <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%;">
-        <label><h5 class="pl-3">{{ $value->first_name }}</h5></label>
+        <img src="{{ $value->getProfilePicAttribute() ?? asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-4 rounded-circle p-0">
+        <label><h5 class="pl-3"></h5><a href="{{ route('industry.chart',Crypt::encryptString($value->id) )}}">{{ $value->first_name }}</a></h5></label>
     </div>
     <div class="col-lg-9 mt-2">
         <div class="row m-0">

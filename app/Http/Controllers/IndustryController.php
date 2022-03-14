@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Agent;
 use App\Models\Industry;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 
 class IndustryController extends Controller
 {
@@ -30,9 +31,27 @@ class IndustryController extends Controller
         return $data;
     }
 
-    public function industryChart()
+    public function industryChart($id)
     {
-        return view('industry.industry_chart');
+        try {
+
+            $id = Crypt::decryptString($id);
+            $agent = Industry::where('agent_id',$id)->with('agent')->first();
+            if (!$agent) {
+                return redirect('/industry')->with('error', 'No data founds');
+            }
+
+            $agentArray = array();
+            $agentArray[] = intval($agent->health_care);
+            $agentArray[] = intval($agent->IT);
+            $agentArray[] = intval($agent->hospitality);
+            $agentArray[] = intval($agent->finance);
+            $agentArray[] = intval($agent->industrial);
+            $agentImage = $agent;
+            return view('industry.industry_chart')->with(['agent'=>$agentArray,'agentImage'=>$agentImage]);
+        } catch (\Throwable $th) {
+            return redirect('/industry')->with('error', 'No Agent founds');
+        }
     }
 
     public function submit_agents_industry(Request $request)

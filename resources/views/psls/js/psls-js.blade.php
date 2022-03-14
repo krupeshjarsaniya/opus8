@@ -1,4 +1,5 @@
 <script>
+    /* Store Agent Psls Data */
     function pslsSubmit(ele)
     {
         var formId = $(ele).data('id');
@@ -29,6 +30,13 @@
                 if (jqXHR.status == 200) {
                     toastr.success(response.message);
                 }
+
+                // if (response.status) {
+                //     $("#industryAgent").append(response.html);
+                //     if (!response.show_loadmore) {
+                //         $(".remedy-login-btn").remove();
+                //     }
+                // }
             },
             error: function(error) {
                 var message = null;

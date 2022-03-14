@@ -7,6 +7,13 @@
       <h1 class="text-center font-weight-light mb-3"><b>Meetigns</b></h1>
       <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 0 auto"></div>
       <div id="app"></div>
+      <svg width="500" height="350">
+         <defs>
+            <clipPath id="myCircle">
+               <circle cx="475" cy="175" r="31.37267421602789" fill="transparent" />
+            </clipPath>
+         </defs>
+      </svg>
     <div>
 </section>
 @endsection
@@ -25,23 +32,34 @@
 <script>
 
   $(document).ready(function(){
-        
-        // alert('hii');     
 
-            if ($(window).width() <= 767) 
-            {  
-             $('.apexcharts-theme-light').css('height','500');
-             $('.apexcharts-svg').attr('height','500');
-             $('.apexcharts-svg foreignObject').css('height','500');
+        // alert('hii');
+
+            if ($(window).width() <= 767)
+            {
+                $('svg').css('width','100%');
+                $('image').attr('clip-path','url(#myCircle)');
+                $('#myCircle').children('circle').attr('cx','113');
+                $('#myCircle').children('circle').attr('cy','113');
+                $('#myCircle').children('circle').attr('r','20');
+                $('.apexcharts-datalabel-label').remove();
+                $('.apexcharts-datalabel-value').remove();
+                $(".apexcharts-radialbar>g").css('transform','translate(-16%, -3%) scale(1.5)');
+                $('.apexcharts-theme-light').css('height','500');
+                $('.apexcharts-svg').attr('height','500');
+                $('.apexcharts-svg foreignObject').css('height','500');
             }
             else
             {
-
+               $('image').attr('clip-path','url(#myCircle)');
+               $('.apexcharts-datalabel-label').remove();
+               $('.apexcharts-datalabel-value').remove();
+               $('.apexcharts-radialbar-hollow').css('width','800');
                $('.apexcharts-theme-light').css('width','800');
                $('.apexcharts-svg').attr('width','800');
-               $('.apexcharts-svg foreignObject').css('width','800'); 
-            }  
-            
+               $('.apexcharts-svg foreignObject').css('width','800');
+            }
+
         })
 
   var _seed = 42;
@@ -57,12 +75,12 @@
           super(props);
 
           this.state = {
-          
-             series: [44, 55, 67, 83, 100, 90],
+
+            series: [44, 55, 67, 83, 100, 90],
             options: {
 
               chart: {
-                
+
                 height: 350,
                 type: 'radialBar',
               },
@@ -126,7 +144,7 @@
                 colors: ['#e38c01', '#ffd704', '#74cdd6', '#0073af', '#a8d7a9','#4f5050'],
                 stroke: {
                   lineCap: 'round',
-                   
+
                 }
             },
 
