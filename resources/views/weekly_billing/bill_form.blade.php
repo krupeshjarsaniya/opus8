@@ -11,7 +11,7 @@
             {{ session()->get('error') }}
         </div>
         @endif
-        <div class="row mt-5">
+        <div class="row mt-5 mb-3">
             <div class="col-lg-3"><h5>Agent</h5></div>
             <div class="col-lg-3"><h5>Weekly Billings</h5></div>
             <div class="col-lg-3"><h5>Average Close Out</h5></div>
@@ -34,6 +34,10 @@
 @push('scripts')
 <script>
     $(document).ready(function() {
+
+        // Placeholder Remove
+        placeholder();
+
         let page = 1;
         $(".remedy-login-btn").on("click", function() {
             page++;
@@ -79,6 +83,15 @@
             });
         })
     });
+
+    function placeholder()
+    {
+        var mql = window.matchMedia("screen and (min-width: 1024px)");
+        if (mql.matches)
+        { // if media query matches
+            $('.form-control').removeAttr('placeholder');
+        }
+    }
 
     function SubmitBillings(ele)
     {

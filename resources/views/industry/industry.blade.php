@@ -78,6 +78,7 @@
                 success: function(response) {
                     if (response.status) {
                         $("#industryAgent").append(response.html);
+                        
                         if (!response.show_loadmore) {
                             $(".remedy-login-btn").remove();
                         }

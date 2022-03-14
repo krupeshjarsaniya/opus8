@@ -15,7 +15,7 @@
 <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 <script type="text/javascript">
-	/**
+  /**
  * ---------------------------------------
  * This demo was created using amCharts 5.
  * 
@@ -245,15 +245,15 @@ series.bullets.push(function (root, series, dataItem) {
 series.set("heatRules", [
   {
     dataField: "valueY",
-    min: am5.color("#FF8E43"),
-    max: am5.color("#FF8E43"),
+    min: am5.color("#ff8701"),
+    max: am5.color("#ffbd01"),
     target: series.columns.template,
     key: "fill"
   },
   {
     dataField: "valueY",
-    min: am5.color("#FF8E43"),
-    max: am5.color("#FF8E43"),
+    min: am5.color("#ff8701"),
+    max: am5.color("#ffbd01"),
     target: circleTemplate,
     key: "fill"
   }
