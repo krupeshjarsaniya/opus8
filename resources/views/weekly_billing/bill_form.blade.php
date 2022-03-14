@@ -62,6 +62,7 @@
                 success: function(response) {
                     if (response.status) {
                         $("#agentBilling").append(response.html);
+                        placeholder();
                         if (!response.show_loadmore) {
                             $(".remedy-login-btn").remove();
                         }

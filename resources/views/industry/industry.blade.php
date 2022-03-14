@@ -54,6 +54,7 @@
 @push('scripts')
 <script>
     $(document).ready(function() {
+        placeholder();
         let page = 1;
         $(".remedy-login-btn").on("click", function() {
             page++;
@@ -78,6 +79,7 @@
                 success: function(response) {
                     if (response.status) {
                         $("#industryAgent").append(response.html);
+                        placeholder()
                         
                         if (!response.show_loadmore) {
                             $(".remedy-login-btn").remove();
@@ -100,6 +102,14 @@
             });
         })
     });
+
+    function placeholder(){
+        var mql = window.matchMedia("screen and (min-width: 1024px)");
+        if (mql.matches)
+        { // if media query matches
+            $('.form-control').removeAttr('placeholder');
+        }
+    }
 
     function SubmitBillings(ele)
     {
