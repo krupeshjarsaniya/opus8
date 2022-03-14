@@ -1,4 +1,14 @@
 <script>
+    /* Placeholder */
+
+    $(document).ready(function() {
+        var mql = window.matchMedia("screen and (min-width: 1024px)");
+        if (mql.matches)
+        { // if media query matches
+            $('.form-control').removeAttr('placeholder');
+        }
+    });
+
     /* Store Agent Psls Data */
     function pslsSubmit(ele)
     {

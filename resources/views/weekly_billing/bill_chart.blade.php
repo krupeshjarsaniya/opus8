@@ -245,15 +245,15 @@ series.bullets.push(function (root, series, dataItem) {
 series.set("heatRules", [
   {
     dataField: "valueY",
-    min: am5.color("#FF8E43"),
-    max: am5.color("#FF8E43"),
+    min: am5.color("#ffbd01"),
+    max: am5.color("#ff8701"),
     target: series.columns.template,
     key: "fill"
   },
   {
     dataField: "valueY",
-    min: am5.color("#FF8E43"),
-    max: am5.color("#FF8E43"),
+    min: am5.color("#ffbd01"),
+    max: am5.color("#ff8701"),
     target: circleTemplate,
     key: "fill"
   }

@@ -11,7 +11,7 @@
             {{ session()->get('error') }}
         </div>
         @endif
-        <div class="row mt-5">
+        <div class="row mt-5 mb-3">
             <div class="col-lg-2"><h6>Agent</h6></div>
             <div class="col-lg-10">
                 <div class="row m-0">
@@ -31,7 +31,7 @@
                             <div class="col-lg-3"><h6>Finance</h6></div>
                         </div>
                     </div>
-                    <div class="col-lg-1 px-0">
+                    <div class="col-lg-1 pl-0">
                         <div class="row m-0">
                             <div class="col-lg-3"><h6>Action</h6></div>
                         </div>
@@ -54,6 +54,7 @@
 @push('scripts')
 <script>
     $(document).ready(function() {
+        placeholder();
         let page = 1;
         $(".remedy-login-btn").on("click", function() {
             page++;
@@ -78,6 +79,7 @@
                 success: function(response) {
                     if (response.status) {
                         $("#industryAgent").append(response.html);
+                        placeholder();
                         if (!response.show_loadmore) {
                             $(".remedy-login-btn").remove();
                         }
@@ -99,6 +101,14 @@
             });
         })
     });
+
+    function placeholder(){
+        var mql = window.matchMedia("screen and (min-width: 1024px)");
+        if (mql.matches)
+        { // if media query matches
+            $('.form-control').removeAttr('placeholder');
+        }
+    }
 
     function SubmitBillings(ele)
     {
