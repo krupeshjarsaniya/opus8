@@ -25,24 +25,24 @@
 
                     <div class="col-lg-3 px-3 bg-2 form-group mt-2">
                         <div class="remedy-input-icon-wrapper">
-                            <input type="text" class=" form-control " name="average_close_out" value="{{ $agent->signup->average_close_out ?? '' }}" autocomplete="" autofocus placeholder="">
+                            <input type="text" class=" form-control " name="average_close_out" value="{{ $agent->signup->average_close_out ?? '' }}" autocomplete="" autofocus placeholder="Average Close Out">
                         </div>
                     </div>
                     <div class="col-lg-3 px-3 bg-2 form-group mt-2">
                         <div class="remedy-input-icon-wrapper">
-                            <input type="text" class=" form-control " name="agent" value="{{ $agent->signup->agent ?? '' }}" autocomplete="" autofocus placeholder="">
+                            <input type="text" class=" form-control " name="agent" value="{{ $agent->signup->agent ?? '' }}" autocomplete="" autofocus placeholder="Agent">
                         </div>
                     </div>
                     <div class="col-lg-3 px-3 bg-2 form-group mt-2">
-                        {{-- <button type="submit" class="remedy-login-btn">Sign up <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button> --}}
+                        <!-- <button type="submit" class="remedy-login-btn">Sign up <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button> -->
                         <button type="button" class="remedy-login-btn" data-id="Form_Name_{{ $agent->first_name }}_{{ $agent->id }}" onclick="signUpSubmit(this)">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
                     </div>
                 </div>
             </form>
 
-                <div class="form-btn-block">
+                <!-- <div class="form-btn-block">
                     <button type="submit" class="remedy-login-btn">Sign up <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
-                </div>
+                </div> -->
             @endforeach
     <div>
 </section>
