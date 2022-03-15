@@ -11,7 +11,7 @@
             {{ session()->get('error') }}
         </div>
         @endif
-        <div class="row mt-5 mb-3">
+        <div class="row mt-5 mx-0 mb-3">
             <div class="col-lg-2"><h6>Agent</h6></div>
             <div class="col-lg-10">
                 <div class="row m-0">

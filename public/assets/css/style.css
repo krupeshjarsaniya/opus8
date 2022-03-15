@@ -1335,9 +1335,33 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
  .psls_image{
-      width: 1000px;
-
+      width: 100px !important;
+      height: 52px !important;
+      border-radius: 50%;
   }
+
+  .industry_image{
+    width: 100px !important;
+    height: 57px !important;
+    border-radius: 50%;
+  }
+
+  @media(min-width: 280px) and (max-width: 767px)
+{
+    .psls_image{
+        width: 100% !important;
+        height: 270px !important;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 1024px)
+{
+    .psls_image{
+        width: 683px !important;
+        height: 500px !important;
+    }
+}
 /* yagnik end */
 
 

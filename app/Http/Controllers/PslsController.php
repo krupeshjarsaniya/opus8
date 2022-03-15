@@ -9,10 +9,28 @@ use Illuminate\Support\Facades\Validator;
 
 class PslsController extends Controller
 {
-    public function psls()
+    public function psls(Request $request)
     {
-        $agents = Agent::where('id', '!=', 0)->with('psls')->get();
-        return view('psls.psls', compact('agents'));
+        $data = $this->load_agents_psls($request);
+        return view('psls.psls')->with($data);
+        // $agents = Agent::where('id', '!=', 0)->with('psls')->get();
+        // return view('psls.psls', compact('agents'));
+    }
+
+    public function load_agents_psls(Request $request)
+    {
+        $data['agentsPsls'] = Agent::with('psls')->paginate(5);
+        $data['show_loadmore'] = false;
+        if ($data['agentsPsls']->lastPage() !== $data['agentsPsls']->currentPage()) {
+            $data['show_loadmore'] = true;
+        }
+        $data['html'] = view('ajax.ajax-psls', $data)->render();
+        unset($data['agentsPsls']);
+        if ($request->ajax()) {
+            $data['status'] = true;
+            return response()->json($data);
+        }
+        return $data;
     }
 
     public function pslsStore(Request $request)
@@ -37,7 +55,7 @@ class PslsController extends Controller
 
         $pslscheck = Psls::where('agent_id',$request->agentId)->first();
         $psls = array(
-            'agent_id' => $request->agentId,
+            'agent_id' => $request->agent_id,
             'new_on_board' => $request->new_on_board,
             'sector' => $request->sector,
             'company' => $request->company,
@@ -59,4 +77,8 @@ class PslsController extends Controller
         // dd($agentId);
         return view('psls.agent-chart');
     }
+
+    
+
+
 }

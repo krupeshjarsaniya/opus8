@@ -1,13 +1,64 @@
 <script>
-    /* Placeholder */
 
-    $(document).ready(function() {
+
+$(document).ready(function() {
+        placeholder();
+        let page = 1;
+        $(".remedy-login-btn").on("click", function() {
+            page++;
+            $.ajax({
+                url: "{{ route('psls.loadmore') }}?page=" + page,
+                type: 'POST',
+                dataType: 'json',
+                cache: false,
+                contentType: false,
+                processData: false,
+                headers: {
+                    "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
+                },
+                beforeSend: function() {
+                    $(".remedy-login-btn #load_more").text("loading");
+                    $(".loader_area").addClass("show");
+                },
+                complete : function() {
+                    $(".remedy-login-btn #load_more").text("Load More");
+                    $(".loader_area").removeClass("show");
+                },
+                success: function(response) {
+                    if (response.status) {
+                        $("#pslsAgent").append(response.html);
+                        placeholder()
+                        
+                        if (!response.show_loadmore) {
+                            $(".removeButton").remove();
+                        }
+                    }
+                },
+                error: function(error) {
+                    var message = null;
+                    if (typeof error.responseJSON.errors != "undefined") {
+                        $.each(error.responseJSON.errors, function(id, topic) {
+                            message = topic[0];
+                            return false;
+                        });
+                    }
+                    if (!message) {
+                        message = error.responseJSON.message;
+                    }
+                    toastr.error(message);
+                }
+            });
+        })
+    });
+
+    function placeholder(){
         var mql = window.matchMedia("screen and (min-width: 1024px)");
         if (mql.matches)
         { // if media query matches
             $('.form-control').removeAttr('placeholder');
         }
-    });
+    }
+
 
     /* Store Agent Psls Data */
 
