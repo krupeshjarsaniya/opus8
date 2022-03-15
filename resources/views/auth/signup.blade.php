@@ -14,43 +14,74 @@
                 <div class="col-lg-3 px-4 text-center"><h5>Button</h5></div>
             </div>
 
-            @foreach ($agents as $agent)
-            <form action="#" onsubmit="return false" method="post" name="Form_Name{{ $agent->first_name }}{{ $agent->id }}"  id="Form_Name{{ $agent->first_name }}{{ $agent->id }}">
-                <div class="row  border-top border-gray">
-                    <div class="col-lg-3 px-3  mt-2">
-                        <div class="row">
-                            <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 px-5 px-lg-0 rounded-circle p-0">
-                            <label class="col-lg-10 col-12 text-lg-left text-center mt-3"><h5>{{$agent->first_name}}</h5></label>
-                        </div>
-                        <input type="hidden" name="agentId" id="agentId" value="{{ $agent->id }}">
-                    </div>
-
-                    <div class="col-lg-3 px-3 bg-2 form-group my-2">
-                        <div class="remedy-input-icon-wrapper">
-                            <input type="text" class=" form-control " name="average_close_out" value="{{ $agent->signup->average_close_out ?? '' }}" autocomplete="" autofocus placeholder="Average Close Out">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 px-3 bg-2 form-group my-2">
-                        <div class="remedy-input-icon-wrapper">
-                            <input type="text" class=" form-control " name="agent" value="{{ $agent->signup->agent ?? '' }}" autocomplete="" autofocus placeholder="Agent">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 px-3 bg-2 form-group my-2">
-                        <!-- <button type="submit" class="remedy-login-btn">Sign up <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button> -->
-                        <button type="button" class="remedy-login-btn" data-id="Form_Name{{ $agent->first_name }}{{ $agent->id }}" onclick="signUpSubmit(this)">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
-                    </div>
-                </div>
-            </form>
-
-                <!-- <div class="form-btn-block">
-                    <button type="submit" class="remedy-login-btn">Sign up <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
-                </div> -->
-            @endforeach
+            <div id="signUp">
+                {!! $html !!}
+            </div>
+            
+        @if ($show_loadmore)
+            <div class="form-btn-block">
+                <button type="submit" class="remedy-login-btn removeButton"><span id="load_more">Load More</span> <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
+            </div>
+        @endif
+         
     <div>
 </section>
 @endsection
 @push('js')
 <script>
+
+    $(document).ready(function() {
+        placeholder();
+        let page = 1;
+        $(".remedy-login-btn").on("click", function() {
+            page++;
+            $.ajax({
+                url: "{{ url('/signup-loadmore') }}?page=" + page,
+                type: 'POST',
+                dataType: 'json',
+                cache: false,
+                contentType: false,
+                processData: false,
+                headers: {
+                    "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
+                },
+                beforeSend: function() {
+                    $(".remedy-login-btn #load_more").text("loading");
+                    $(".loader_area").addClass("show");
+                },
+                complete : function() {
+                    $(".remedy-login-btn #load_more").text("Load More");
+                    $(".loader_area").removeClass("show");
+                },
+                success: function(response) {
+                    if (response.status) {
+                        $("#signUp").append(response.html);
+                        placeholder()
+                        
+                        if (!response.show_loadmore) {
+                            $(".removeButton").remove();
+                        }
+                    }
+                },
+                error: function(error) {
+                    var message = null;
+                    if (typeof error.responseJSON.errors != "undefined") {
+                        $.each(error.responseJSON.errors, function(id, topic) {
+                            message = topic[0];
+                            return false;
+                        });
+                    }
+                    if (!message) {
+                        message = error.responseJSON.message;
+                    }
+                    toastr.error(message);
+                }
+            });
+        })
+    });    
+
+
+
     / Store Sign Up Data /
     function signUpSubmit(ele)
     {
@@ -126,13 +157,13 @@
         });
     }
 
-    $(document).ready(function() {
+    function placeholder(){
         var mql = window.matchMedia("screen and (min-width: 1024px)");
         if (mql.matches)
         { // if media query matches
             $('.form-control').removeAttr('placeholder');
         }
-    });
+    }
     
 </script>
 @endpush

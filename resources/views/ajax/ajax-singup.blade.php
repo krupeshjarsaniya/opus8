@@ -1,27 +1,28 @@
-@foreach($agentsBill as $key => $value)
-
-    <div class=" mt-3 border-top border-gray">
-        <form action="#" class="row" onsubmit="return false" method="post" name="Form_Name_{{ $value->first_name }}_{{ $value->id }}"  id="Form_Name_{{ $value->first_name }}_{{ $value->id }}">
-            <input type="hidden" name="agent_id" value="{{ $value->id }}">
+@foreach ($agentSignup as $agent)
+    <form action="#" onsubmit="return false" method="post" name="Form_Name{{ $agent->first_name }}{{ $agent->id }}"  id="Form_Name{{ $agent->first_name }}{{ $agent->id }}">
+        <div class="row  border-top border-gray">
             <div class="col-lg-3 px-3  mt-2">
-                <img src="{{ $value->getProfilePicAttribute() ?? asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-4 rounded-circle p-0">
-                <label><h5 class="pl-lg-3 pl-1">{{ $value->first_name }}</h5></label>
+                <div class="row">
+                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 px-5 px-lg-0 rounded-circle p-0">
+                    <label class="col-lg-10 col-12 text-lg-left text-center mt-3"><h5>{{$agent->first_name}}</h5></label>
+                </div>
+                <input type="hidden" name="agentId" id="agentId" value="{{ $agent->id }}">
             </div>
-            <div class="col-lg-3 px-3 bg-2 form-group mt-2">
+
+            <div class="col-lg-3 px-3 bg-2 form-group my-2">
                 <div class="remedy-input-icon-wrapper">
-                    <input type="text" class=" form-control " name="weekly_billing" value="{{ $value->billings->weekly_billing ?? '' }}" autocomplete="" autofocus placeholder="">
+                    <input type="text" class=" form-control " name="average_close_out" value="{{ $agent->signup->average_close_out ?? '' }}"  placeholder="Average Close Out">
                 </div>
             </div>
-            <div class="col-lg-3 px-3 bg-2 form-group mt-2">
+            <div class="col-lg-3 px-3 bg-2 form-group my-2">
                 <div class="remedy-input-icon-wrapper">
-                    <input type="text" class=" form-control " name="average_close_out" value="{{ $value->billings->average_close_out ?? '' }}" autocomplete="" autofocus placeholder="">
+                    <input type="text" class=" form-control " name="agent" value="{{ $agent->signup->agent ?? '' }}"  placeholder="Agent">
                 </div>
             </div>
-            <div class="col-lg-3 px-3 bg-2 form-group mt-2">
-
-                    <button type="button" class="remedy-billing-btn" data-id="Form_Name_{{ $value->first_name }}_{{ $value->id }}" onclick="SubmitBillings(this)">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
-
+            <div class="col-lg-3 px-3 bg-2 form-group my-2">
+               <!--  <button type="submit" class="remedy-login-btn">Sign up <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button> -->
+                <button type="button" class="remedy-login-btn" data-id="Form_Name{{ $agent->first_name }}{{ $agent->id }}" onclick="signUpSubmit(this)">Submit <i><img src="{{ asset('assets/images/back-arrow-icon.svg') }}" alt="remedy"></i></button>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
 @endforeach

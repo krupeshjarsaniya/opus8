@@ -43,7 +43,7 @@ Route::group(['prefix' => '/', 'namespace' => ''], $appRoutes);
 Route::get('/sign-up', [LoginController::class, 'signup'])->name('signup');
 Route::post('/sign-up/store', [LoginController::class, 'signupStore'])->name('signup.store');
 Route::get('/signup-chart', [LoginController::class, 'signupChart'])->name('signup.chart');
-Route::post('/agent-loadmore-signup', [LoginController::class, 'signupChart'])->name('signup.chart.loadmore');
+Route::post('/signup-loadmore', [LoginController::class, 'signupLoadmore'])->name('signup.loadmore');
 
 //Psls
 Route::prefix('/psls')->group(function () {
