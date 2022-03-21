@@ -76,10 +76,28 @@ class LoginController extends Controller
         return Auth::guard('web');
     }
 
-    public function signup()
+    public function signup(Request $request)
     {
-        $agents = Agent::where('id', '!=', 0)->with('signup')->get();
-        return view('auth.signup',compact('agents'));
+        // $agents = Agent::where('id', '!=', 0)->with('signup')->get();
+        // return view('auth.signup',compact('agents'));
+        $data = $this->signupLoadmore($request);
+        return view('auth.signup')->with($data);
+    }
+
+    public function signupLoadmore(Request $request)
+    {
+        $data['agentSignup'] = Agent::with('signup')->paginate(5);
+        $data['show_loadmore'] = false;
+        if ($data['agentSignup']->lastPage() !== $data['agentSignup']->currentPage()) {
+            $data['show_loadmore'] = true;
+        }
+        $data['html'] = view('ajax.ajax-singup', $data)->render();
+        unset($data['agentSignup']);
+        if ($request->ajax()) {
+            $data['status'] = true;
+            return response()->json($data);
+        }
+        return $data;
     }
 
     public function signupStore(Request $request)
@@ -128,4 +146,6 @@ class LoginController extends Controller
     {
         return view('auth.signup-chart');
     }
+
+    
 }
