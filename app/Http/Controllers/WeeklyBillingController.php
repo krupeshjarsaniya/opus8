@@ -32,9 +32,25 @@ class WeeklyBillingController extends Controller
 
     public function billChart()
     {
-        return view('weekly_billing.bill_chart');
-    }
+        $data = Billings::with('Agent')->get();
 
+        $billingArray = array();
+        foreach($data as $key => $value)
+        {
+           $bill = array(
+
+            'name' => $value->Agent->first_name,
+            'steps' => intval($value->weekly_billing),
+            'href' => $value->Agent->getProfilePicAttribute(),
+           );
+
+           array_push($billingArray, $bill);
+        }
+        
+        return view('weekly_billing.bill_chart')->with(['billingArray'=>$billingArray]);
+        // return view('weekly_billing.bill_chart');
+    }
+    
     public function submit_agents_billing(Request $request)
     {
         try {
