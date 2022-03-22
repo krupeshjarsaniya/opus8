@@ -1362,6 +1362,7 @@ input[type="range"]::-webkit-slider-thumb {
         height: 500px !important;
     }
 }
+
 /* yagnik end */
 
 
@@ -1400,7 +1401,7 @@ input[type="range"]::-webkit-slider-thumb {
         font-weight: bolder !important;
     }
 
-    #agentFrontendChart .apexcharts-graphical
+    #agentFrontendChart.apexcharts-graphical
     {
        transform: translate(245px, 0px)!important;
     }

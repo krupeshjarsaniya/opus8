@@ -7,7 +7,10 @@
             <div class="col-lg-4 col-12 px-md-5 px-lg-0 p-0">
                 <img src="{{ $value->getProfilePicAttribute() ?? asset('assets/images/avatar-img.png') }}" alt="remedy" class="psls_image">
             </div>
-            <label class="col-lg-8 col-12 text-lg-left text-center mt-lg-3 mt-4"><a href="{{ route('industry.chart',Crypt::encryptString($value->id) )}}">{{ $value->first_name }}</a></h5></label>
+            <div class="col-lg-8 col-12  text-lg-left text-center mt-lg-0 mt-3">
+                <label class="col-lg-12"><a href="{{ route('industry.chart',Crypt::encryptString($value->id) )}}">{{ $value->first_name }}</a></h5></label>
+                <button class=" col-lg-12 remedy-billing-btn px-lg-5 py-lg-1"><a href="{{ route('meetign.chart',Crypt::encryptString($value->id) )}}" class="text-white">Meetign</a></button>
+            </div> 
         </div>
     </div>
     <div class="col-lg-9 col-12 mt-2 my-2 my-lg-0 mx-0">

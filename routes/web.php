@@ -66,4 +66,4 @@ Route::post('/agent-loadmore-biling', [WeeklyBillingController::class, 'load_age
 Route::post('/agent-submit-billing', [WeeklyBillingController::class, 'submit_agents_billing'])->name('bill.chart.submit');
 
 //METTING
-Route::get('/meeting-chart', [MeetingController::class, 'meetingChart'])->name('meetign.chart');
+Route::get('/meeting-chart/{id}', [MeetingController::class, 'meetingChart'])->name('meetign.chart');

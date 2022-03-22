@@ -15,6 +15,7 @@
          </defs>
       </svg>
     <div>
+      <input type="hidden" value="{{ json_encode($agent) }}" id="getArray">
 </section>
 @endsection
 
@@ -52,6 +53,9 @@
             else
             {
                $('image').attr('clip-path','url(#myCircle)');
+               $('#myCircle').children('circle').attr('cx','459');
+                $('#myCircle').children('circle').attr('cy','175');
+                $('#myCircle').children('circle').attr('r','31');
                $('.apexcharts-datalabel-label').remove();
                $('.apexcharts-datalabel-value').remove();
                $('.apexcharts-radialbar-hollow').css('width','800');
@@ -70,13 +74,16 @@
 </script>
 
 <script type="text/babel">
+
+      var MainValue = $('#getArray').val();
+        MainValue = JSON.parse(MainValue)
+        console.log(MainValue);
+
       class ApexChart extends React.Component {
         constructor(props) {
           super(props);
-
           this.state = {
-
-            series: [44, 55, 67, 83, 100, 90],
+            series: MainValue,
             options: {
 
               chart: {
@@ -133,14 +140,15 @@
                   hollow: {
                     margin: 15,
                     size: '25%',
-                    image: '{{ asset('assets/images/avatar-img.png') }}',
+                    image: '{{ $agentImage->agent->getProfilePicAttribute() ?? asset('assets/images/avatar-img.png') }}',
                     imageWidth: 64,
                     imageHeight: 64,
                     imageClipped: false
                   },
                 }
               },
-                labels: ['Industrial', 'Healthcare', 'Gas & Oil', 'Hospitality','Logistisc','Finance'],
+              
+                labels: ['Industrial '+{{ $agent[0] }}+'%', 'Healthcare '+{{ $agent[1] }}+'%', 'Gas & Oil '+{{ $agent[2] }}+'%', 'Hospitality '+{{ $agent[3] }}+'%','Logistisc '+{{ $agent[4] }}+'%','Finance '+{{ $agent[5] }}+'%'],
                 colors: ['#e38c01', '#ffd704', '#74cdd6', '#0073af', '#a8d7a9','#4f5050'],
                 stroke: {
                   lineCap: 'round',
@@ -166,5 +174,6 @@
       const domContainer = document.querySelector('#app');
       ReactDOM.render(React.createElement(ApexChart), domContainer);
 </script>
+
 
 @endpush

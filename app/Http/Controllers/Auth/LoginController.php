@@ -144,7 +144,18 @@ class LoginController extends Controller
 
     public function signupChart()
     {
-        return view('auth.signup-chart');
+        $datas = Agent::get();
+        $agent = array();
+        foreach($datas as $data)
+        {
+            $getdata = array(
+                'name' => $data->first_name,
+                'steps' => intval($data->sales_percentage),
+                'href' => $data->getProfilePicAttribute(),
+            );
+            array_push($agent ,$getdata);
+        }
+        return view('auth.signup-chart')->with(['agent' => $agent]);
     }
 
     
