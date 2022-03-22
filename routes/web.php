@@ -48,6 +48,7 @@ $appRoutes = function () {
             Route::get('/', [PslsController::class, 'psls'])->name('psls');
             Route::post('/store', [PslsController::class, 'pslsStore'])->name('psls.store');
             Route::get('/agent-chart/{agentId}', [PslsController::class, 'pslsAgentChart'])->name('agent.chart');
+            Route::post('/agent-loadmore-psls', [PslsController::class, 'load_agents_psls'])->name('psls.loadmore');
         });
 
 
@@ -64,7 +65,7 @@ $appRoutes = function () {
         Route::post('/agent-submit-billing', [WeeklyBillingController::class, 'submit_agents_billing'])->name('bill.chart.submit');
 
         //METTING
-        Route::get('/meeting-chart', [MeetingController::class, 'meetingChart'])->name('meetign.chart');
+        Route::get('/meeting-chart/{id}', [MeetingController::class, 'meetingChart'])->name('meetign.chart');
 
     });
 };
