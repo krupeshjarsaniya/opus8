@@ -5887,13 +5887,17 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 #65 /opt/lampp/htdocs/opus8/server.php(21): require_once('/opt/lampp/htdo...')
 #66 {main}
 "} 
-[2022-03-14 05:35:35] local.ERROR: Undefined variable: collection (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1440574042 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 05:35:35] local.ERROR: Undefined variable: collection (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1440574042 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1440574042\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: collection (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: collection (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:16)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -6011,13 +6015,17 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 #55 D:\\xampp\\htdocs\\opus8\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #56 {main}
 "} 
-[2022-03-14 05:35:49] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1585475439 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 05:35:49] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1585475439 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1585475439\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:16)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -6135,13 +6143,17 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 #55 D:\\xampp\\htdocs\\opus8\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #56 {main}
 "} 
-[2022-03-14 05:35:52] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-497224127 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 05:35:52] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-497224127 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-497224127\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:16)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -6259,13 +6271,17 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 #55 D:\\xampp\\htdocs\\opus8\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #56 {main}
 "} 
-[2022-03-14 05:35:54] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-680866905 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1258</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 05:35:54] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-680866905 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1258</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-680866905\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:16)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -6383,13 +6399,17 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 #55 D:\\xampp\\htdocs\\opus8\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #56 {main}
 "} 
-[2022-03-14 05:35:56] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1667054924 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 05:35:56] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1667054924 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1667054924\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:16)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -6507,13 +6527,17 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 #55 D:\\xampp\\htdocs\\opus8\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #56 {main}
 "} 
-[2022-03-14 05:35:59] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-873278904 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 05:35:59] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-873278904 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-873278904\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:16)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -6631,13 +6655,17 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 #55 D:\\xampp\\htdocs\\opus8\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #56 {main}
 "} 
-[2022-03-14 05:36:16] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-702403103 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 05:36:16] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-702403103 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-702403103\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:16)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -6755,13 +6783,17 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 #55 D:\\xampp\\htdocs\\opus8\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #56 {main}
 "} 
-[2022-03-14 05:36:22] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-2013401489 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 05:36:22] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-2013401489 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-2013401489\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:16)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -6879,13 +6911,17 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 #55 D:\\xampp\\htdocs\\opus8\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #56 {main}
 "} 
-[2022-03-14 05:36:24] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1384483478 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 05:36:24] local.ERROR: Undefined variable: agents (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1384483478 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1248</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1384483478\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: agents (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:16)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 15, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)
@@ -7066,7 +7102,8 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
 [stacktrace]
 #0 {main}
 "} 
-[2022-03-14 06:08:55] local.ERROR: Trying to get property 'average_close_out' of non-object (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-703757685 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1249</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-03-14 06:08:55] local.ERROR: Trying to get property 'average_close_out' of non-object (View: D:\xampp\htdocs\opus8\resources\views\auth\signup.blade.php) {"view":{"view":"D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-703757685 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1249</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-703757685\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -7280,9 +7317,12 @@ esources\\views/industry/industry.blade.php(96): Illuminate\\Foundation\\Bootstr
   #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
 </samp>}
 </pre><script>Sfdump(\"sf-dump-136305632\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'average_close_out' of non-object (View: D:\\xampp\\htdocs\\opus8\esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php:27)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'average_close_out' of non-object (View: D:\\xampp\\htdocs\\opus8\
+esources\\views\\auth\\signup.blade.php) at D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php:27)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\opus8\esources\\views/auth/signup.blade.php(27): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 26, Array)
+#0 D:\\xampp\\htdocs\\opus8\
+esources\\views/auth/signup.blade.php(27): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 26, Array)
 #1 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 D:\\xampp\\htdocs\\opus8\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\xampp\\\\htdocs...', Array)

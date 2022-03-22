@@ -49,6 +49,7 @@ $appRoutes = function () {
             Route::post('/store', [PslsController::class, 'pslsStore'])->name('psls.store');
             Route::post('/agent-loadmore-psls', [PslsController::class, 'load_agents_psls'])->name('psls.loadmore');
             Route::get('/agent-chart/{agentId}', [PslsController::class, 'pslsAgentChart'])->name('agent.chart');
+            Route::post('/agent-loadmore-psls', [PslsController::class, 'load_agents_psls'])->name('psls.loadmore');
         });
 
 
