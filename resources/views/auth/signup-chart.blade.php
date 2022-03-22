@@ -130,7 +130,7 @@ bullet.interactionsEnabled = false;
 var outlineCircle = bullet.createChild(am4core.Circle);
 outlineCircle.adapter.add("radius", function (radius, target) {
     var circleBullet = target.parent;
-    return circleBullet.circle.pixelRadius + 0;
+    return circleBullet.circle.pixelRadius + 10;
 })
 
 var image = bullet.createChild(am4core.Image);
