@@ -48,7 +48,7 @@ class WeeklyBillingController extends Controller
         }
         
         return view('weekly_billing.bill_chart')->with(['billingArray'=>$billingArray]);
-        // return view('weekly_billing.bill_chart');
+        
     }
     
     public function submit_agents_billing(Request $request)

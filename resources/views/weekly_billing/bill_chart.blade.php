@@ -98,6 +98,7 @@ cursor.behavior = "none";
     image.horizontalCenter = "middle";
     image.verticalCenter = "middle";
     image.propertyFields.href = "href";
+    // image.dy = -80;
 
     image.adapter.add("mask", function (mask, target) {
         var circleBullet = target.parent;

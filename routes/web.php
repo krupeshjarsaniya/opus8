@@ -7,6 +7,7 @@ use App\Http\Controllers\MeetingController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\SignupController;
 use App\Http\Controllers\PslsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -30,39 +31,46 @@ $appRoutes = function () {
     // Route::post('/', [HomeController::class, 'agent_zoho_preview'])->name('agent.preview');
 
     Route::middleware(['auth'])->group(function () {
+
         Route::post('/agent-loadmore', [AgentController::class, 'load_agents']);
         Route::resources(['agent' => AgentController::class]);
         Route::post('/agent/{id}/update', [AgentController::class, 'update'])->name('agent.update');
         Route::delete('/agent/{agent_id}/songs/{song_id}', [AgentController::class, 'deleteSong'])->name('agent.song.delete');
+
+        // SIGNUP
+        Route::get('/sign-up', [SignupController::class, 'signup'])->name('signup');
+        Route::post('/sign-up/store', [SignupController::class, 'signupStore'])->name('signup.store');
+        Route::get('/signup-chart', [SignupController::class, 'signupChart'])->name('signup.chart');
+        Route::post('/signup-loadmore', [SignupController::class, 'signupLoadmore'])->name('signup.loadmore');
+
+        //Psls
+        Route::prefix('/psls')->group(function () {
+            Route::get('/', [PslsController::class, 'psls'])->name('psls');
+            Route::post('/store', [PslsController::class, 'pslsStore'])->name('psls.store');
+            Route::get('/agent-chart/{agentId}', [PslsController::class, 'pslsAgentChart'])->name('agent.chart');
+        });
+
+
+        //INDUSTRY
+        Route::get('/industry', [IndustryController::class, 'industry'])->name('industry');
+        Route::get('/industry-chart/{id}', [IndustryController::class, 'industryChart'])->name('industry.chart');
+        Route::post('/agent-loadmore-industry', [IndustryController::class, 'load_agents_industry'])->name('industry.chart.billing');
+        Route::post('/agent-submit-industry', [IndustryController::class, 'submit_agents_industry'])->name('industry.chart.submit');
+
+        // WEEKLY BILLING
+        Route::get('/bill-form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
+        Route::get('/bill-chart', [WeeklyBillingController::class, 'billChart'])->name('bill.chart');
+        Route::post('/agent-loadmore-biling', [WeeklyBillingController::class, 'load_agents_billing'])->name('bill.chart.billing');
+        Route::post('/agent-submit-billing', [WeeklyBillingController::class, 'submit_agents_billing'])->name('bill.chart.submit');
+
+        //METTING
+        Route::get('/meeting-chart', [MeetingController::class, 'meetingChart'])->name('meetign.chart');
+
     });
 };
 
 Route::group(['prefix' => '/', 'namespace' => ''], $appRoutes);
 
-// SIGNUP
-Route::get('/sign-up', [LoginController::class, 'signup'])->name('signup');
-Route::post('/sign-up/store', [LoginController::class, 'signupStore'])->name('signup.store');
-Route::get('/signup-chart', [LoginController::class, 'signupChart'])->name('signup.chart');
-Route::post('/signup-loadmore', [LoginController::class, 'signupLoadmore'])->name('signup.loadmore');
 
-//Psls
-Route::prefix('/psls')->group(function () {
-    Route::get('/', [PslsController::class, 'psls'])->name('psls');
-    Route::post('/store', [PslsController::class, 'pslsStore'])->name('psls.store');
-    Route::get('/agent-chart/{agentId}', [PslsController::class, 'pslsAgentChart'])->name('agent.chart');
-});
 
-//INDUSTRY
-Route::get('/industry', [IndustryController::class, 'industry'])->name('industry');
-Route::get('/industry-chart/{id}', [IndustryController::class, 'industryChart'])->name('industry.chart');
-Route::post('/agent-loadmore-industry', [IndustryController::class, 'load_agents_industry'])->name('industry.chart.billing');
-Route::post('/agent-submit-industry', [IndustryController::class, 'submit_agents_industry'])->name('industry.chart.submit');
 
-// WEEKLY BILLING
-Route::get('/bill-form', [WeeklyBillingController::class, 'billForm'])->name('bill.form');
-Route::get('/bill-chart', [WeeklyBillingController::class, 'billChart'])->name('bill.chart');
-Route::post('/agent-loadmore-biling', [WeeklyBillingController::class, 'load_agents_billing'])->name('bill.chart.billing');
-Route::post('/agent-submit-billing', [WeeklyBillingController::class, 'submit_agents_billing'])->name('bill.chart.submit');
-
-//METTING
-Route::get('/meeting-chart', [MeetingController::class, 'meetingChart'])->name('meetign.chart');
