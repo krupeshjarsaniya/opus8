@@ -8,278 +8,163 @@
         <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 25px auto"></div>
         <div id="sign_chart"></div>
         <div>
+        <input type="hidden" value="{{ json_encode($agent) }}" id="getArray">
 </section>
 @endsection
 @push('js')
-<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
 <script type="text/javascript">
-	/**
+
+ /**
  * ---------------------------------------
- * This demo was created using amCharts 5.
+ * This demo was created using amCharts 4.
  * 
  * For more information visit:
  * https://www.amcharts.com/
  * 
  * Documentation is available at:
- * https://www.amcharts.com/docs/v5/
+ * https://www.amcharts.com/docs/v4/
  * ---------------------------------------
  */
 
-// Create root element
-// https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("sign_chart");
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
 
-// Set themes
-// https://www.amcharts.com/docs/v5/concepts/themes/
-root.setThemes([
-  am5themes_Animated.new(root)
-]);
+/**
+ * Chart design taken from Samsung health app
+ */
 
-var data = [
-  {
-    name: "Bella",
-    steps: 45688,
-    pictureSettings: {
-      src: "{{ asset('assets/images/avatar-img.png') }}"
-    }
-  },
-  {
-    name: "Sunny",
-    steps: 35781,
-    pictureSettings: {
-      src: "{{ asset('assets/images/avatar-img.png') }}"
-    }
-  },
-  {
-    name: "Taku",
-    steps: 35781,
-    pictureSettings: {
-      src: "{{ asset('assets/images/avatar-img.png') }}"
-    }
-  },
-  {
-    name: "Shamaura",
-    steps: 35781,
-    pictureSettings: {
-      src: "{{ asset('assets/images/avatar-img.png') }}"
-    }
-  },
-  {
-    name: "Sebastian",
-    steps: 35781,
-    pictureSettings: {
-      src: "{{ asset('assets/images/avatar-img.png') }}"
-    }
-  },
-  {
-    name: "Dan",
-    steps: 25464,
-    pictureSettings: {
-      src: "{{ asset('assets/images/avatar-img.png') }}"
-    }
-  },
-  {
-    name: "Tyler",
-    steps: 15465,
-    pictureSettings: {
-      src: "{{ asset('assets/images/avatar-img.png') }}"
-    }
-  },
-  {
-    name: "Ben",
-    steps: 11561,
-    pictureSettings: {
-      src: "{{ asset('assets/images/avatar-img.png') }}"
-    }
-  }
-];
+var chart = am4core.create("sign_chart", am4charts.XYChart);
+chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
-// Create chart
-// https://www.amcharts.com/docs/v5/charts/xy-chart/
-var chart = root.container.children.push(
-  am5xy.XYChart.new(root, {
-    panX: false,
-    panY: false,
-    wheelX: "none",
-    wheelY: "none",
-    paddingLeft: 50,
-    paddingRight: 40
-  })
-);
+chart.paddingRight = 40;
 
-// Create axes
-// https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+var MainValue = $('#getArray').val();
+chart.data = JSON.parse(MainValue);
 
-var yRenderer = am5xy.AxisRendererY.new(root, {});
-yRenderer.grid.template.set("visible", false);
-
-var yAxis = chart.yAxes.push(
-  am5xy.CategoryAxis.new(root, {
-    categoryField: "name",
-    renderer: yRenderer,
-    paddingRight:40
-  })
-);
-
-var xRenderer = am5xy.AxisRendererX.new(root, {});
-xRenderer.grid.template.set("strokeDasharray", [3]);
-
-var xAxis = chart.xAxes.push(
-  am5xy.ValueAxis.new(root, {
-    min: 0,
-    renderer: xRenderer
-  })
-);
-
-// Add series
-// https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-var series = chart.series.push(
-  am5xy.ColumnSeries.new(root, {
-    name: "Income",
-    xAxis: xAxis,
-    yAxis: yAxis,
-    valueXField: "steps",
-    categoryYField: "name",
-    sequencedInterpolation: true,
-    calculateAggregates: true,
-    maskBullets: false,
-    tooltip: am5.Tooltip.new(root, {
-      dy: -30,
-      pointerOrientation: "vertical",
-      labelText: "{valueX}"
-    })
-  })
-);
-
-series.columns.template.setAll({
-  strokeOpacity: 0,
-  cornerRadiusBR: 10,
-  cornerRadiusTR: 10,
-  cornerRadiusBL: 10,
-  cornerRadiusTL: 10,
-  maxHeight: 50,
-  fillOpacity: 0.8
-});
-
-var currentlyHovered;
-
-series.columns.template.events.on("pointerover", function(e) {
-  handleHover(e.target.dataItem);
-});
-
-series.columns.template.events.on("pointerout", function(e) {
-  handleOut();
-});
-
-function handleHover(dataItem) {
-  if (dataItem && currentlyHovered != dataItem) {
-    handleOut();
-    currentlyHovered = dataItem;
-    var bullet = dataItem.bullets[0];
-    bullet.animate({
-      key: "locationX",
-      to: 1,
-      duration: 600,
-      easing: am5.ease.out(am5.ease.cubic)
-    });
-  }
-}
-
-function handleOut() {
-  if (currentlyHovered) {
-    var bullet = currentlyHovered.bullets[0];
-    bullet.animate({
-      key: "locationX",
-      to: 0,
-      duration: 600,
-      easing: am5.ease.out(am5.ease.cubic)
-    });
-  }
-}
+// chart.data = [{
+//     "name": "Monica",
+//     "steps": 45688,
+//     "href": "{{asset('assets/images/avatar-img.png')}}"
+// }, {
+//     "name": "Joey",
+//     "steps": 35781,
+//     "href": "{{asset('assets/images/avatar-img.png')}}"
+// }, {
+//     "name": "Ross",
+//     "steps": 25464,
+//     "href": "{{asset('assets/images/avatar-img.png')}}"
+// }, {
+//     "name": "Phoebe",
+//     "steps": 18788,
+//     "href": "{{asset('assets/images/avatar-img.png')}}"
+// }, {
+//     "name": "Rachel",
+//     "steps": 15465,
+//     "href": "{{asset('assets/images/avatar-img.png')}}"
+// }, {
+//     "name": "Chandler",
+//     "steps": 11561,
+//     "href": "{{asset('assets/images/avatar-img.png')}}"
+// }];
 
 
-var circleTemplate = am5.Template.new({});
 
-series.bullets.push(function(root, series, dataItem) {
-  var bulletContainer = am5.Container.new(root, {});
-  var circle = bulletContainer.children.push(
-    am5.Circle.new(
-      root,
-      {
-        radius: 34
-      },
-      circleTemplate
-    )
-  );
+var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "name";
+categoryAxis.renderer.grid.template.strokeOpacity = 0;
+categoryAxis.renderer.minGridDistance = 10;
+categoryAxis.renderer.labels.template.dx = -40;
+categoryAxis.renderer.minWidth = 120;
+categoryAxis.renderer.tooltip.dx = -40;
 
-  var maskCircle = bulletContainer.children.push(
-    am5.Circle.new(root, { radius: 27 })
-  );
+var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
+valueAxis.renderer.inside = true;
+valueAxis.renderer.labels.template.fillOpacity = 0.3;
+valueAxis.renderer.grid.template.strokeOpacity = 0;
+valueAxis.min = 0;
+valueAxis.cursorTooltipEnabled = false;
+valueAxis.renderer.baseGrid.strokeOpacity = 0;
+valueAxis.renderer.labels.template.dy = 20;
 
-  // only containers can be masked, so we add image to another container
-  var imageContainer = bulletContainer.children.push(
-    am5.Container.new(root, {
-      mask: maskCircle
-    })
-  );
+var series = chart.series.push(new am4charts.ColumnSeries);
+series.dataFields.valueX = "steps";
+series.dataFields.categoryY = "name";
+series.tooltip.pointerOrientation = "horizontial";
+series.tooltip.dy = -20;
+series.tooltip.dx = 30;
+// series.columnsContainer.zIndex = 100;
+series.columns.template.tooltipText = "{valueX.value}%";
+series.columns.template.showTooltipOn = "always";
+series.columns.template.tooltipX = 0;
 
-  // not working
-  var image = imageContainer.children.push(
-    am5.Picture.new(root, {
-      templateField: "pictureSettings",
-      centerX: am5.p50,
-      centerY: am5.p50,
-      width: 60,
-      height: 60
-    })
-  );
+var columnTemplate = series.columns.template;
+columnTemplate.height = am4core.percent(50);
+columnTemplate.maxHeight = 50;
+columnTemplate.column.cornerRadius(5, 10, 5, 10);   
+columnTemplate.strokeOpacity = 0;
 
-  return am5.Bullet.new(root, {
-    locationX: 0,
-    sprite: bulletContainer
-  });
-});
+series.heatRules.push({ target: columnTemplate, property: "fill", dataField: "valueX", min: am4core.color("#ffbd01"), max: am4core.color("#ff8701") });
+series.mainContainer.mask = undefined;
 
-// heatrule
-series.set("heatRules", [
-  {
-    dataField: "valueX",
-    min: am5.color("#FF8E43"),
-    max: am5.color("#FF8E43"),
-    target: series.columns.template,
-    key: "fill"
-  },
-  {
-    dataField: "valueX",
-    min: am5.color("#FF8E43"),
-    max: am5.color("#FF8E43"),
-    target: circleTemplate,
-    key: "fill"
-  }
-]);
+var cursor = new am4charts.XYCursor();
+chart.cursor = cursor;
+cursor.lineX.disabled = true;
+cursor.lineY.disabled = true;
+cursor.behavior = "none";
 
-series.data.setAll(data);
-yAxis.data.setAll(data);
+var bullet = columnTemplate.createChild(am4charts.CircleBullet);
+bullet.circle.radius = 28;
+bullet.valign = "middle";
+bullet.align = "right";
+bullet.isMeasured = true;
+bullet.interactionsEnabled = false;
+bullet.horizontalCenter = "right";
+bullet.interactionsEnabled = false;
 
-var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
-cursor.lineX.set("visible", false);
-cursor.lineY.set("visible", false);
-
-cursor.events.on("cursormoved", function() {
-  var dataItem = series.get("tooltip").dataItem;
-  if (dataItem) {
-    handleHover(dataItem)
-  }
-  else {
-    handleOut();
-  }
+// var hoverState = bullet.states.create("hover");
+var outlineCircle = bullet.createChild(am4core.Circle);
+outlineCircle.adapter.add("radius", function (radius, target) {
+    var circleBullet = target.parent;
+    return circleBullet.circle.pixelRadius + 0;
 })
 
-// Make stuff animate on load
-// https://www.amcharts.com/docs/v5/concepts/animations/
-series.appear();
-chart.appear(1000, 100);
-</script>
+var image = bullet.createChild(am4core.Image);
+image.width = 100;
+image.height = 100;
+image.horizontalCenter = "middle";
+image.verticalCenter = "middle";
+image.propertyFields.href = "href";
+
+image.adapter.add("mask", function (mask, target) {
+    var circleBullet = target.parent;
+    return circleBullet.circle;
+})
+
+var previousBullet;
+chart.cursor.events.on("cursorpositionchanged", function (event) {
+    var dataItem = series.tooltipDataItem;
+
+    if (dataItem.column) {
+        var bullet = dataItem.column.children.getIndex(1);
+
+        if (previousBullet && previousBullet != bullet) {
+            previousBullet.isHover = false;
+        }
+
+        if (previousBullet != bullet) {
+
+            var hs = bullet.states.getKey("hover");
+            hs.properties.dx = dataItem.column.pixelWidth;
+            bullet.isHover = true;
+
+            previousBullet = bullet;
+        }
+    }
+})
+  </script>
 @endpush
