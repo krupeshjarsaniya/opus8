@@ -4,7 +4,11 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center font-weight-light">Weekly <b>Billings</b></h1>
+        <div class="remedy-logout-details-block">
+            <h1 class="text-center font-weight-light">Weekly <b>Billings</b></h1>
+            <span class="border-line"></span>
+        </div>
+        
         @if(session()->has('error'))
         <div class="alert alert-danger">
             {{ session()->get('error') }}

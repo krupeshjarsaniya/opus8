@@ -4,7 +4,11 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center font-weight-light mb-1">Sign Ups Broken down by <b class="">industry</b></h1>
+        <div class="remedy-logout-details-block">
+           <h1 class="text-center font-weight-light mb-1">Sign Ups Broken down by <b class="">industry</b></h1>
+            <span class="border-line"></span>
+        </div>
+      
         @if(session()->has('error'))
         <div class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>

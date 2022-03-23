@@ -4,8 +4,11 @@
 @section('content')
 <section class="remedy-layout-wrapper">
     <div class="container">
-        <h1 class="text-center font-weight-light mb-3">Week 41 <b>Billings</b></h1>
-        <div style="border-top:5px solid #F1F1F1; width: 100px; margin: 0 auto"></div>
+        <div class="remedy-logout-details-block">
+            <h1 class="text-center font-weight-light mb-3">Week 41 <b>Billings</b></h1>
+            <span class="border-line"></span>
+        </div>
+       
         <div id="bill_chart"></div>
     <div>
 <input type="hidden" value="{{ json_encode($billingArray) }}" id="getArray">

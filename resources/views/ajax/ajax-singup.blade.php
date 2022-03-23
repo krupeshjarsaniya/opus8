@@ -3,7 +3,7 @@
         <div class="row  border-top border-gray">
             <div class="col-lg-3 px-3  mt-2">
                 <div class="row">
-                    <img src="{{ asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 px-5 px-lg-0 rounded-circle p-0">
+                    <img src="{{ $agent->getProfilePicAttribute() ?? asset('assets/images/avatar-img.png') }}" alt="remedy" class="col-lg-2 px-5 px-lg-0 rounded-circle p-0">
                     <label class="col-lg-10 col-12 text-lg-left text-center mt-3"><h5>{{$agent->first_name}}</h5></label>
                 </div>
                 <input type="hidden" name="agentId" id="agentId" value="{{ $agent->id }}">
